@@ -1,0 +1,210 @@
+/* CSS Document */
+
+
+@charset "GBK";
+
+/* 链接颜色 */
+A:link {
+	COLOR: #457FFC; TEXT-DECORATION: none; font-family: "宋体"; font-size: 9pt
+}
+A:visited {
+	COLOR: #457FFC; TEXT-DECORATION: none; font-family: "宋体"; font-size: 9pt
+}
+A:active {
+	COLOR: #FF0000; TEXT-DECORATION: none; font-family: "宋体"; font-size: 9pt
+}
+A:hover {
+	COLOR: #6600FF; TEXT-DECORATION: underline; font-family: "宋体"; font-size: 9pt
+}
+
+.news a:link{ COLOR:#555555; TEXT-DECORATION: none; font-family: "宋体"; font-size: 12px}
+.news a:visited{COLOR:#336699; TEXT-DECORATION: none; font-family: "宋体"; font-size: 12px}
+.news a:hover{COLOR: #ff6600; TEXT-DECORATION: underline; font-family: "宋体"; font-size:12px}
+.news a:active{COLOR:#ff0000; TEXT-DECORATION: none; font-family: "宋体"; font-size: 12px}
+
+
+/*页面属性*/
+BODY {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	BACKGROUND:#DBE6FE; 
+	MARGIN: 0px; 
+	FONT: 9pt 宋体;
+	SCROLLBAR-HIGHLIGHT-COLOR:#d6dff7;
+	SCROLLBAR-ARROW-COLOR:#215dc6;
+	SCROLLBAR-TRACK-COLOR:#d6dff7;
+	SCROLLBAR-BASE-COLOR:#AEC6F0;
+}
+
+
+/*按钮属性*/
+.button {
+	BORDER-RIGHT: #457FFC 1px ridge;
+	PADDING-RIGHT: 1px;
+	BORDER-TOP: #ffffff 1px ridge;
+	PADDING-LEFT: 1px;
+	FONT-SIZE: 9pt;
+	PADDING-BOTTOM: 1px;
+	BORDER-LEFT: #ffffff 1px ridge;
+	COLOR: #000000;
+	PADDING-TOP: 1px;
+	BORDER-BOTTOM: #457FFC 1px ridge;
+	FONT-FAMILY: "宋体";
+	HEIGHT: 20px;
+	BACKGROUND-COLOR: #f1f1f1;
+	cursor: hand;
+}
+
+/*文字属性*/
+.chinese
+{
+    FONT-SIZE: 12px;
+    FONT-FAMILY: "宋体";
+	color:#333333;
+}
+
+/*标题属性*/
+.title {
+	font-size:12pt;
+	font-family: "宋体";
+	color:#457FFC;
+	}
+	
+/*提示信息字体属性*/
+.info1
+{ 
+	color:#FA605E;
+    font-size:10pt;
+}
+
+/*表格属性*/
+table { 
+	background-color:#DBE6FE;
+	border-color:#457FFC;
+	border-collapse:collapse;
+	border-top-color:#457FFC;
+	border-right-color:#457FFC;
+	border-left-color:#457FFC;
+	border-bottom-color:#457FFC;
+	}
+	
+tr { border-color:#457FFC; }
+td { border-color:#457FFC; }	
+.item{ line-height:24px; font-size:13px; border-bottom:dotted 1px #457fff; padding:2px 4px 2px 14px;}
+.point{ color:#457FFC; text-decoration:underline; font-weight:bold; margin-right:5px; margin-left:5px;}
+.alert{color:Red;}
+.checked{color:#457FFC;}
+.input{ width:450px; margin:auto 6px auto 15px;}
+
+/*88888888888888模式对话框8888888888*/
+div#mbDIV
+{
+position: absolute;
+top: 0px;
+left: 0px;
+width:expression(document.body.scrollWidth+"px");
+height:expression(document.body.scrollHeight+"px");
+background-color: #AAAAAA;
+z-index: 10;
+filter: alpha(opacity=80);opacity:0.8;
+}
+div#loginDIV
+{
+position: absolute;
+width: 500px;
+height: 180px;
+background-color:white;
+z-index: 20;
+}
+div#loginTopDIV
+{
+width: 100%;
+height: 26px;
+text-align:left;
+background-color: blue;
+padding:4px 10px 4px 10px;
+cursor: move;
+}
+/*Tooltips*/
+#toolTip{
+   border:1px solid #CCC;
+   background-color:#F9F9F9;
+   width:350px;
+   position:absolute;
+   visibility: hidden;
+   overflow: hidden;
+  	font-family: Tahoma,"宋体";
+	font-size: 11px;
+	font-weight: normal;
+   color:#333;
+   z-index:999;
+}
+
+#toolTip h1{
+   display:block;
+  	font-family: Tahoma,"宋体";
+	font-size: 12px;
+	font-weight: bold;
+   background-color:#F1F1F1;
+   border-bottom:1px solid #CCC;  
+   margin:0px;
+   padding:0px 2px;   
+}
+
+#toolTip p {
+   margin:0px;
+   padding:4px 2px;   
+   background-color:#ffffff;
+}
+#toolTip .item
+{
+	line-height:16px;
+}
+.news_list{ list-style:none; margin:6px;}
+.news_list_item{ list-style:none; line-height:22px; background:url(../images/news_list_time_bg.jpg); background-repeat:no-repeat; background-position:0px 4px;}
+.news_list_item .datetime{color:White; width:75px; padding-left:10px; margin-right:20px; padding-top:2px;}
+.page_num{ text-align:center; line-height:24px; margin:6px;}
+.page_num span{ padding-left:4px; padding-right:4px; padding-top:4px; padding-bottom:3px; height:22px; margin-right:4px; background:url(../images/page_num_off.jpg); background-repeat:repeat-x;}
+.page_num span.page_num_on{background:url(../images/page_num_on.jpg)}
+
+/* tables 表格排序*/
+#sort th {
+	text-align: left;
+	height: 30px;
+	border-bottom:dotted 1px #457fff;
+	cursor: pointer;
+	font-size:14px;
+	font-weight:bold;;
+	line-height:18px;
+	overflow:hidden;
+	padding:2px 2px 2px 15px;
+	position:relative;
+	white-space:nowrap;
+}
+
+
+.TBheader {
+	background-image: url(../../Images/small.gif);	
+	cursor: pointer;
+	font-weight: bold;
+	background-repeat: no-repeat;
+	background-position: center left;
+	padding-left: 0px;
+	
+	margin-left: -1px;
+}
+
+.SortUp {
+	background-image: url(../../Images/small_asc.gif);
+	background-color: #3399FF;
+}
+
+.SortDown {
+	background-image: url(../../Images/small_desc.gif);
+	background-color: #3399FF;
+	
+}
+#sort tbody td{ line-height:22px; border-bottom:dotted 1px #457fff;}
+#sort tbody tr :hover{background-color:#ffeeee;}

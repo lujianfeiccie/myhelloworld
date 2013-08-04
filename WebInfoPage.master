@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="WebInfoPage.master.cs" Inherits="WebInfoPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>无标题页</title>
+    <link type="text/css" rel="Stylesheet" href="CSS/All.css" />
+    <script type="text/javascript" src="JS/jquery.js" language="javascript"></script>
+     <script type="text/javascript" src="JS/Functions.js" language="javascript"></script>
+</head>
+<body>
+<div id="body">
+    <div id="top">
+        <div id="top_right"><img src="Images/set_index.gif" style="cursor:pointer;" onclick="addCookie('军械士官学校图书馆','http://edu.ditaner.net')"/>&nbsp;<img src="Images/set_favorite.gif" style="cursor:pointer;" onclick="setHomepage('军械士官学校图书馆','http://Default.aspx');" />&nbsp;<img src="Images/get_new_books.gif" /></div>
+        <div id="top_guid">
+            <ul>
+                <li class="index_guid"><a href="">首页</a></li>
+                <li><a href="">本馆概况</a></li>
+                <li><a href="">读者服务</a></li>
+                <li><a href="">书目查询</a></li>
+                <li><a href="">电子资源</a></li>
+                <li><a href="">互动专区</a></li>
+                <li><a href="">参考咨询</a></li>
+                <li><a href="">馆长信箱</a></li>
+                <li><a href="">网络课程</a></li>
+                <li><a href="">学校首页</a></li>
+            </ul>
+        </div>
+        <div id="top_banner">
+        </div>
+    </div>
+    <div id="content">
+        <div id="content_left_guid">
+            <div id="content_left_guid_head"></div>
+            <asp:contentplaceholder id="ContentPlaceHolder2" runat="server">
+            </asp:contentplaceholder>
+        </div>
+        <div id="content_center_info">
+        
+                <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+        </div>
+    
+        
+   
+
+    </div>
+    <div id="foot">
+       <a href="#" onclick="addCookie('军械士官学校图书馆','http://edu.ditaner.net')"> 加入收藏</a>|<a href="#" onclick="setHomepage('军械士官学校图书馆','http://Default.aspx');" > 设为首页</a>|<a href="Admin/"> 管理入口</a>|<a href="#"> 联系我们</a><br />
+        最佳分辨率：1024*768&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;访问人数：&nbsp;&nbsp;<span class="counter">8</span><span class="counter">8</span><span class="counter">8</span><span class="counter">8</span><span class="counter">8</span><span class="counter">8</span><br />
+        copyright &copy; 2009&nbsp;武汉军械士官学校图书馆 All Rights Reserved.<br />
+        网站维护：武汉军械士官学校图书馆
+    </div>
+</div>
+</body>
+</html>
