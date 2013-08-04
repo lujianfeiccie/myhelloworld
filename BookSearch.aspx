@@ -18,9 +18,7 @@
                     </ItemTemplate>
                 </asp:Repeater>
             </div>
-             
-            
-        </div>
+    </div>
         <div id="content_center_info">
                <div class="search_control_head" id="change_head"><span class="change_head_on" id="change_head1">简单检索</span><span onclick="javascript:location.href='Advance.aspx'" id="change_head2"  class="change_head">多字段检索</span></div>
                     <div class="change_info" style="display:block;" id="change_info1">
@@ -48,11 +46,15 @@
                                     <asp:ListItem>ISBN</asp:ListItem>
                                 </asp:DropDownList>
                             </div>
-                            <div style="display:none;">请选择数据来源：<asp:DropDownList ID="DropDownList4" runat="server" Visible="false"/></div>
+                            <div style="display:none;">请选择数据来源：
+                            <asp:DropDownList ID="DropDownList4" runat="server" Visible="false"/></div>
                             <div>请选择检索模式：
-                                    <asp:RadioButton ID="RadioButton1" runat="server" GroupName="mode" Text="前方一致" Checked="True" />&nbsp;
-                                    <asp:RadioButton ID="RadioButton3" runat="server" Text="完全匹配" GroupName="mode" />
-                                    <asp:RadioButton ID="RadioButton2" runat="server" GroupName="mode" Text="任意匹配" />
+                                <asp:DropDownList ID="DropDownListSearchMode" runat="server">
+                                    <asp:ListItem Value="0">前方一致</asp:ListItem>
+                                    <asp:ListItem Value="1">完全匹配</asp:ListItem>
+                                    <asp:ListItem Value="2">任意匹配</asp:ListItem>
+                                </asp:DropDownList>
+                                &nbsp; &nbsp;
                             
                             </div>
                             

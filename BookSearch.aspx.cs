@@ -25,13 +25,13 @@ public partial class BookSearch : System.Web.UI.Page
         //BindData();
         if (!IsPostBack)
         {
-            fillDataSource();
+            fillDataSource(); //给DropDownList4填充数据来源(请选择数据来源:)
            // checkMyBookList();
             
         }
-        textid = TextBox1.ClientID.ToString();
-        downlistid = DropDownList1.ClientID.ToString();
-        buttomid = Button1.ClientID.ToString();
+        textid = TextBox1.ClientID.ToString(); //检索框
+        downlistid = DropDownList1.ClientID.ToString();//请选择检索方式
+        buttomid = Button1.ClientID.ToString();//检索按钮
         GetTopSearch();
     }
 
@@ -42,14 +42,9 @@ public partial class BookSearch : System.Web.UI.Page
         mysearch.SearchDataOpen();
 
         SqlDataReader reader = mysearch.GetHotSearch(50);
-        top10.DataSource = reader;
+        top10.DataSource = reader;//热门搜索
         top10.DataBind();
         reader.Close();
-        
-        reader.Close();
-
-
-
         mysearch.SearchDataClose();
     }
 
@@ -61,7 +56,7 @@ public partial class BookSearch : System.Web.UI.Page
             ListItem item = new ListItem();
             item.Text = config[key].ToString();
             item.Value = key;
-            DropDownList4.Items.Add(item);
+            DropDownList4.Items.Add(item); //请选择数据来源右边那个
         }
         ListItem all = new ListItem();
         all.Text = "所有位置";
@@ -85,15 +80,15 @@ public partial class BookSearch : System.Web.UI.Page
     private void BindData()
     {
         string sqlString = "";
-        string colName = DropDownList1.SelectedValue;
-        string value = TextBox1.Text.Trim();
+        string colName = DropDownList1.SelectedValue; //检索方式下拉框
+        string value = TextBox1.Text.Trim(); //检索条件文本
         string LIKE = " LIKE ";
         string E = " = ";
         string Q = "'";
         string P = "%";
         string ODB = " ORDER BY ";
         string mainpart = "select distinct recid, title, author, classno, bookno, isbn, pubdate, publisher, keyword, secret, createdate, availableNum from v_search where ";
-        string orderby = DropDownList3.SelectedValue;
+        string orderby = DropDownList3.SelectedValue; //结果排序下拉框
         string order = "";
         string mode = "前方一致";
         int pageSize = Convert.ToInt16(DropDownList2.SelectedValue.ToString());
@@ -140,12 +135,11 @@ public partial class BookSearch : System.Web.UI.Page
             {
                 order = " DESC";
             }
-
-            if (RadioButton1.Checked) //mode, 前方一致
+            if (DropDownListSearchMode.SelectedValue.Equals("0")) //mode, 前方一致
             {
                 sqlString = mainpart + colName + LIKE + Q + value + P + Q + ODB + orderby + order;
             }
-            else if (RadioButton3.Checked) //mode, 完全匹配
+            else if (DropDownListSearchMode.SelectedValue.Equals("1")) //mode, 完全匹配
             {
                 sqlString = mainpart + colName + E + Q + value + Q + ODB + orderby + order;
             }
@@ -188,7 +182,7 @@ public partial class BookSearch : System.Web.UI.Page
         NameValueCollection urls = (NameValueCollection)ConfigurationManager.GetSection("serviceSites/siteUrl");
         NameValueCollection tokens = (NameValueCollection)ConfigurationManager.GetSection("serviceSites/siteToken");
 
-        fromWhereKey = DropDownList4.SelectedItem.Value;
+        fromWhereKey = DropDownList4.SelectedItem.Value;//请选择数据来源
         string url = string.Empty;
         if (!fromWhereKey.Equals("all"))
         {
@@ -306,12 +300,11 @@ public partial class BookSearch : System.Web.UI.Page
             {
                 colName = "title";
             }
-
-            if (RadioButton1.Checked) //mode, 前方一致
+            if (DropDownListSearchMode.SelectedValue.Equals("0")) //mode, 前方一致
             {
                 rowFilter = colName + LIKE + Q + value + P + Q;
             }
-            else if (RadioButton3.Checked) //mode, 完全匹配
+            else if (DropDownListSearchMode.SelectedValue.Equals("1")) //mode, 完全匹配
             {
                 rowFilter = colName + E + Q + value + Q;
             }
