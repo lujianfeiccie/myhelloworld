@@ -15,13 +15,8 @@
             FilterMode="InvalidChars" InvalidChars="`~!@#$%^&*()_+{}[]|\:&quot;;'<>?,./"
             TargetControlID="TextBox1">
         </ajaxToolkit:FilteredTextBoxExtender>
-        <asp:TextBox ID="TextBox1" runat="server" Width="300px"></asp:TextBox>
-        <asp:Button ID="Button1" runat="server" Text="检索" OnClick="Button1_Click" />
-    </div>
-    
-    <div class="search_control"  style="padding-left:20px; padding-top:20px; line-height:24px; background-color:#F9F9EB; font-size:13px;">
         
-        <div style="font-size:13px;">【检索途径】
+         <span style="font-size:13px;">【检索途径】
         <asp:DropDownList ID="DropDownList1" runat="server">
             <asp:ListItem Value="_刊名" Selected="True">刊名</asp:ListItem>
             <asp:ListItem Value="_ISSN">ISSN</asp:ListItem>
@@ -30,11 +25,20 @@
             <asp:ListItem Value="_出版周期">出版周期</asp:ListItem>
             <asp:ListItem Value="_年期数">年期数</asp:ListItem>
         </asp:DropDownList>
-        【检索模式】
-        <asp:RadioButton ID="RadioButton1" runat="server" GroupName="mode" Text="前方一致" Checked="True" />&nbsp;
-        <asp:RadioButton ID="RadioButton3" runat="server" Text="完全匹配" GroupName="mode" />
-        <asp:RadioButton ID="RadioButton2" runat="server" GroupName="mode" Text="任意匹配" />
+        </span>
+        <asp:TextBox ID="TextBox1" runat="server" Width="300px"></asp:TextBox>
+        <asp:Button ID="Button1" runat="server" Text="检索" OnClick="Button1_Click" />
+        <br />
+        <div style="margin-left:200px">
+            <asp:RadioButton ID="RadioButton1" runat="server" GroupName="mode" Text="前方一致" Checked="True" />&nbsp;
+            <asp:RadioButton ID="RadioButton3" runat="server" Text="完全匹配" GroupName="mode" />
+            <asp:RadioButton ID="RadioButton2" runat="server" GroupName="mode" Text="任意匹配" />
         </div>
+    </div>
+    
+    <div class="search_control"  style="padding-left:20px; padding-top:20px; line-height:24px; background-color:#F9F9EB; font-size:13px;">
+        
+       
         <div style=" margin:12px 0px 10px 0px;">
         
         【每页显示记录数】
@@ -45,6 +49,7 @@
             <asp:ListItem>50</asp:ListItem>
             <asp:ListItem>100</asp:ListItem>
         </asp:DropDownList>
+            <br />
         【排序方式】
         <asp:DropDownList ID="DropDownList3" runat="server">
             <asp:ListItem Value="_刊名" Selected="True">刊名</asp:ListItem>
@@ -55,6 +60,7 @@
         </asp:DropDownList>
         <asp:RadioButton ID="RadioButton4" runat="server" GroupName="order" Text="升序" />
         <asp:RadioButton ID="RadioButton5" runat="server" GroupName="order" Text="降序" Checked="True" />
+            <br />
         【检索范围】<asp:RadioButton ID="RadioButton6" runat="server" Checked="True" GroupName="range"
             Text="不限" />
         <asp:RadioButton ID="RadioButton7" runat="server" GroupName="range" Text="在结果中" />
