@@ -1,3 +1,5 @@
 Bin/
 cdsearch/
 FileUpload/
+*.config
+*.sln
