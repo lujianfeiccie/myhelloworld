@@ -15,13 +15,7 @@
             FilterMode="InvalidChars" InvalidChars="`~!@#$%^&*()_+{}[]|\:&quot;;'<>?,./"
             TargetControlID="TextBox1">
         </ajaxToolkit:FilteredTextBoxExtender>
-        <asp:TextBox ID="TextBox1" runat="server" Width="300px"></asp:TextBox>
-        <asp:Button ID="Button1" runat="server" Text="检索" OnClick="Button1_Click" />
-    </div>
-    
-    <div class="search_control"  style="padding-left:20px; padding-top:20px; line-height:24px; background-color:#F9F9EB; font-size:13px;">
-        
-        <div style="font-size:13px;">【检索途径】
+        <span style="font-size:13px;">【检索途径】
         <asp:DropDownList ID="DropDownList1" runat="server">
             <asp:ListItem Value="题名" Selected="True">题名</asp:ListItem>
             <asp:ListItem Value="索书号">索书号</asp:ListItem>
@@ -29,11 +23,18 @@
             <asp:ListItem Value="介绍">介绍</asp:ListItem>
             
         </asp:DropDownList>
+        </span>
+        <asp:TextBox ID="TextBox1" runat="server" Width="300px"></asp:TextBox>
+        <asp:Button ID="Button1" runat="server" Text="检索" OnClick="Button1_Click" />
+        <div style="margin-left:200px">
         【检索模式】
         <asp:RadioButton ID="RadioButton1" runat="server" GroupName="mode" Text="前方一致" Checked="True" />&nbsp;
         <asp:RadioButton ID="RadioButton3" runat="server" Text="完全匹配" GroupName="mode" />
         <asp:RadioButton ID="RadioButton2" runat="server" GroupName="mode" Text="任意匹配" />
         </div>
+    </div>
+    
+    <div class="search_control"  style="padding-left:20px; padding-top:20px; line-height:24px; background-color:#F9F9EB; font-size:13px;">
         <div style=" margin:12px 0px 10px 0px;">
         
         【每页显示记录数】
@@ -113,7 +114,7 @@
             <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
         </cc1:MyGridView>
         </div>  
-        <div id="toolTip" style="left:200px;> </div>
+        <div id="toolTip" style="left:200px;"> </div>
         </form>   
 </asp:Content>
 

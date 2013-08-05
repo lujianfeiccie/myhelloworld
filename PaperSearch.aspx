@@ -24,6 +24,8 @@
             <asp:ListItem Value="_出版者">出版单位</asp:ListItem>
             <asp:ListItem Value="_出版周期">出版周期</asp:ListItem>
             <asp:ListItem Value="_年期数">年期数</asp:ListItem>
+            <asp:ListItem>发行国</asp:ListItem>
+            <asp:ListItem Value="_出版国别">出版国</asp:ListItem>
         </asp:DropDownList>
         </span>
         <asp:TextBox ID="TextBox1" runat="server" Width="300px"></asp:TextBox>
@@ -52,11 +54,14 @@
             <br />
         【排序方式】
         <asp:DropDownList ID="DropDownList3" runat="server">
-            <asp:ListItem Value="_刊名" Selected="True">刊名</asp:ListItem>
+          <asp:ListItem Value="_刊名" Selected="True">刊名</asp:ListItem>
+            <asp:ListItem Value="_ISSN">ISSN</asp:ListItem>
             <asp:ListItem Value="_主办者">主办单位</asp:ListItem>
             <asp:ListItem Value="_出版者">出版单位</asp:ListItem>
             <asp:ListItem Value="_出版周期">出版周期</asp:ListItem>
             <asp:ListItem Value="_年期数">年期数</asp:ListItem>
+            <asp:ListItem>发行国</asp:ListItem>
+            <asp:ListItem Value="_出版国别">出版国</asp:ListItem>
         </asp:DropDownList>
         <asp:RadioButton ID="RadioButton4" runat="server" GroupName="order" Text="升序" />
         <asp:RadioButton ID="RadioButton5" runat="server" GroupName="order" Text="降序" Checked="True" />

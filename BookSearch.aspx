@@ -28,37 +28,31 @@
                             FilterMode="InvalidChars" InvalidChars="`~!@#$%^&*()_+{}[]|\:&quot;;'<>?,./"
                             TargetControlID="TextBox1">
                         </ajaxToolkit:FilteredTextBoxExtender>
-                        <asp:TextBox ID="TextBox1" runat="server" Width="315px"></asp:TextBox>
-                        <asp:Button ID="Button1" runat="server" Text="检索" OnClick="Button1_Click" />
+                            &nbsp;&nbsp;
                         
                         
                         </div>
                        
                         <div class="other_option">
-                            <div>请选择检索方式：
                             
                                  <asp:DropDownList ID="DropDownList1" runat="server">
-                                    <asp:ListItem Value="pinyin" Selected="True">题名</asp:ListItem>
+                                    <asp:ListItem Value="title" Selected="True">题名</asp:ListItem>
                                     <asp:ListItem Value="author">责任者</asp:ListItem>
                                     <asp:ListItem Value="classno">索书号</asp:ListItem>
                                     <asp:ListItem Value="publisher">出版社</asp:ListItem>
                                     <asp:ListItem Value="keyword">主题词</asp:ListItem>
                                     <asp:ListItem>ISBN</asp:ListItem>
+                                     <asp:ListItem Value="pinyin">题名拼音</asp:ListItem>
+                                     <asp:ListItem Value="classno">分类号</asp:ListItem>
                                 </asp:DropDownList>
-                            </div>
-                            <div style="display:none;">请选择数据来源：
-                            <asp:DropDownList ID="DropDownList4" runat="server" Visible="false"/></div>
-                            <div>请选择检索模式：
                                 <asp:DropDownList ID="DropDownListSearchMode" runat="server">
                                     <asp:ListItem Value="0">前方一致</asp:ListItem>
                                     <asp:ListItem Value="1">完全匹配</asp:ListItem>
                                     <asp:ListItem Value="2">任意匹配</asp:ListItem>
                                 </asp:DropDownList>
-                                &nbsp; &nbsp;
-                            
-                            </div>
-                            
-                            <div>每页显示记录数：
+                        <asp:TextBox ID="TextBox1" runat="server" Width="315px"></asp:TextBox>
+                        <asp:Button ID="Button1" runat="server" Text="检索" OnClick="Button1_Click" />
+                            <div style="display:block;">每页显示记录数：
                                     <asp:DropDownList ID="DropDownList2" runat="server">
                                         <asp:ListItem Selected="True">15</asp:ListItem>
                                         <asp:ListItem>20</asp:ListItem>
@@ -68,7 +62,7 @@
                                     </asp:DropDownList>
                             
                             </div>
-                            <div>结果排序方式以：
+                            <div style="display:block;">结果排序方式以：
                                         <asp:DropDownList ID="DropDownList3" runat="server">
                                             <asp:ListItem Selected="True" Value="title">题名</asp:ListItem>
                                             <asp:ListItem Value="author">责任者</asp:ListItem>
@@ -81,9 +75,13 @@
                                         <asp:RadioButton ID="RadioButton5" runat="server" GroupName="order" Text="降序" Checked="True" />
                             
                             </div>
-                            <div>请选择检索范围：
+                            <div style="display:block;">请选择检索范围：
                                     <asp:RadioButton ID="RadioButton6" runat="server" Checked="True" GroupName="range" Text="不限" />
                                     <asp:RadioButton ID="RadioButton7" runat="server" GroupName="range" Text="在结果中" /></div>
+                            <div style="display: none">
+                                请选择数据来源：
+                                <asp:DropDownList ID="DropDownList4" runat="server">
+                                </asp:DropDownList></div>
                             
                             </div>
                             <div> <asp:Panel ID="Panel1" runat="server" Height="2em" Width="100%" Visible="False">
