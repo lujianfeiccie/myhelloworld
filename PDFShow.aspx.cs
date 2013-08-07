@@ -19,7 +19,7 @@ public partial class PDFShow : System.Web.UI.Page
             FileInfo fileinfo = new FileInfo(MapPath("cdsearch/Acrobat.pdf"));
             if (fileinfo.Exists)
             {
-                Response.ContentType = GetContentType(fileinfo.FullName); //获得说明书读写类型
+                  Response.ContentType = GetContentType(fileinfo.FullName); //获得说明书读写类型
                   System.IO.FileStream reader = System.IO.File.OpenRead(fileinfo.FullName);
                   byte[] data = new byte[reader.Length];
                   reader.Read(data, 0, (int)reader.Length);
@@ -29,7 +29,7 @@ public partial class PDFShow : System.Web.UI.Page
             }
             else
             {
-                Response.Write("<div style='width:100%;text-align:center;margin-top:25px;'><font style='color:red;font-size:14px;font-weight:bold;'>无法获得相关专利说明书信息！</font><br/><span>[<a href='javascript:history.go(-1)'>返 回</a>]</span></div>");
+                Response.Write("<div style='width:100%;text-align:center;margin-top:25px;'><font style='color:red;font-size:14px;font-weight:bold;'>文件不存在！</font><br/></div>");
             }
         }
 

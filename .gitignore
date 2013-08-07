@@ -1,6 +1,6 @@
 Bin/
 cdsearch/
 FileUpload/
-*.config
-web.config
-*.sln
+/*.config
+/web.config
+/*.sln
