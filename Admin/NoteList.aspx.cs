@@ -39,21 +39,34 @@ public partial class Admin_NoteList : System.Web.UI.Page
                 ismail = true;
 
             }
-            else { Response.Write("对不起，您没有经过管理员授权管理此项目！"); Response.End(); }
+            else { 
+                Response.Write("对不起，您没有经过管理员授权管理此项目！"); Response.End(); 
+            }
             mynews.NoteDataOpen();
             string url = HttpContext.Current.Request.Url.ToString();//这个是带参数的
             url = Request.FilePath + "?type=" + showtype;//不带参数的
-            
+
             int nowpage = 1;
             int allpage = 9;
             int size = 20;//每页显示条数
+
             if (Request.QueryString["allpage"] != null && Request.QueryString["allpage"].ToString() != "")
+            {
                 allpage = int.Parse(Request.QueryString["allpage"].ToString());
+            }
             else
-                allpage = mynews.GetNoteListNum(ismail, 2, size)[1];
+            {
+                allpage = mynews.GetNoteListNum(ismail, 2, size)[1]; 
+            }
+           
             if (Request.QueryString["pagenum"] != null && Request.QueryString["pagenum"].ToString() != "")
+            {
                 nowpage = int.Parse(Request.QueryString["pagenum"].ToString());
-            else nowpage = 2;
+            }
+            else
+            {
+                nowpage = 1;
+            }
             jumpurl = Request.Url.ToString();
             SqlDataReader reader = mynews.GetNoteList(size, nowpage, ismail, 2);
             news_list_all.DataSource = reader;

@@ -36,15 +36,26 @@
             <thead><tr><th title="单击按标签名排序" style="width:120px;">标题</th><th title="单击按使用次数排序" style="width:60px;">发布时间</th><th title="单击按访问次数排序"  style="width:60px;">发布人</th><th style="width:80px;">审核/反审</th><th style="width:50px;">删除</th></tr>
             </thead><tbody></HeaderTemplate>
             <ItemTemplate> 
-          <tr style="line-height:15px;" id="tr<%# DataBinder.Eval(Container.DataItem,"id") %>"><td id="title<%# DataBinder.Eval(Container.DataItem,"id") %>"><input type="checkbox" value="<%# DataBinder.Eval(Container.DataItem,"id") %>" name="choosecheck" />
+             <tr style="line-height:15px;" id="tr<%# DataBinder.Eval(Container.DataItem,"id") %>">
+                   <td id="title<%# DataBinder.Eval(Container.DataItem,"id") %>">
+                   <input type="checkbox" value="<%# DataBinder.Eval(Container.DataItem,"id") %>" name="choosecheck" />
                     <a href="../NoteView.aspx?id=<%# DataBinder.Eval(Container.DataItem,"id") %>" target="_blank"><% if (showtype == "zx"){ %><%# myfun.ShortString( DataBinder.Eval(Container.DataItem,"info").ToString(),60,true) %><%}else{ %><%# myfun.ShortString( DataBinder.Eval(Container.DataItem,"title").ToString(),60,true) %><%} %></a>
-             </td>
+                   </td>
           
-          <td id="times<%# DataBinder.Eval(Container.DataItem,"id") %>"><%# DataBinder.Eval(Container.DataItem,"pub_time") %></td>
-          <td id="use<%# DataBinder.Eval(Container.DataItem,"id") %>"><%# DataBinder.Eval(Container.DataItem,"pub_user") %></td>
-              <td id="check<%# DataBinder.Eval(Container.DataItem,"id") %>"><a href="#"  style="cursor:pointer;" onclick="checkbox('<%# DataBinder.Eval(Container.DataItem,"id") %>','<%# DataBinder.Eval(Container.DataItem,"ischeck") %>');"><img height="18" title="点击进行审核/反审操作" style="border:none;" src="images/check<%# DataBinder.Eval(Container.DataItem,"ischeck") %>.gif" /></a></td>
+                    <td id="times<%# DataBinder.Eval(Container.DataItem,"id") %>">
+                        <%# DataBinder.Eval(Container.DataItem,"pub_time") %>
+                    </td>
+                    <td id="use<%# DataBinder.Eval(Container.DataItem,"id") %>">
+                        <%# DataBinder.Eval(Container.DataItem,"pub_user") %>
+                       </td>
+                    <td id="check<%# DataBinder.Eval(Container.DataItem,"id") %>">
+                        <a href="#"  style="cursor:pointer;" onclick="checkbox('<%# DataBinder.Eval(Container.DataItem,"id") %>','<%# DataBinder.Eval(Container.DataItem,"ischeck") %>');">
+                        <img height="18" title="点击进行审核/反审操作" style="border:none;" src="images/check<%# DataBinder.Eval(Container.DataItem,"ischeck") %>.gif" /></a>
+                     </td>
              
-              <td><a href="#" onclick="delteit('<%# DataBinder.Eval(Container.DataItem,"id") %>')" >删除</a></td></tr>
+                     <td><a href="#" onclick="delteit('<%# DataBinder.Eval(Container.DataItem,"id") %>')" >
+                      删除</a>
+                     </td></tr>
             </ItemTemplate>
             <FooterTemplate><tr><td></td><td></td><td></td><td></td><td></td></tr></tbody></table></FooterTemplate>
             </asp:Repeater>
@@ -55,7 +66,7 @@
   </table>
 <ucl:pagelist ID="mypagenum" runat="server" />
 
-<div>操作：选择/反选（所有）<input type="checkbox" onclick="chooseit();" />
+<div style="display:none">操作：选择/反选（所有）<input type="checkbox" onclick="chooseit();" />
 &nbsp;更改成状态<select style="width:80px;" id="shenhe" name="shenhe"><option value="1">已审</option>
              <option value="0">待审</option></select>
     &nbsp;&nbsp;<input type="button" onclick="checkall();" value="审核/反审" />&nbsp;&nbsp;<input onclick="delall();" type="button" value="执行删除" />
