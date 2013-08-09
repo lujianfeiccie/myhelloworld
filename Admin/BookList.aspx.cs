@@ -13,7 +13,7 @@ using System.Data.SqlClient;
 public partial class Admin_BookList : System.Web.UI.Page
 {
     public Functions myfun = new Functions();
-    public string jumpurl="booklist.aspx";
+    public string jumpurl = "booklist.aspx";
     protected void Page_Load(object sender, EventArgs e)
     {
         if (Session["username"] != null && Session["username"].ToString() != "" && Session["loginstate"] != null && Session["loginstate"].ToString() == "ok")
@@ -27,9 +27,9 @@ public partial class Admin_BookList : System.Web.UI.Page
             {
                 Book mybook = new Book();
                 mybook.BookDataOpen();
-               
+
                 string url = HttpContext.Current.Request.Url.ToString();//这个是带参数的
-                url = Request.FilePath+"?";//不带参数的
+                url = Request.FilePath + "?";//不带参数的
                 int nowpage = 1;
                 int allpage = 9;
                 int size = 20;//每页显示条数
@@ -51,9 +51,9 @@ public partial class Admin_BookList : System.Web.UI.Page
                 mypagenum.NowPage = nowpage;
                 mypagenum.AllPage = allpage;
             }
-            
+
             else { Response.Write("对不起，您没有经过管理员授权管理此项目！"); Response.End(); }
-            
+
         }
         else { Response.Redirect("Default.aspx"); }
     }

@@ -147,11 +147,11 @@ height=20></TD>
               <table width="426" border="0" cellspacing="0" cellpadding="0">
                 <tr>
                   <td width="145" align="right">用户名：</td>
-                  <td colspan="2"><input name="username" type="text" id="username" style="width:140px;" maxlength="28"></td>
+                  <td colspan="2"><input name="username" type="text" id="username" style="width:140px;" maxlength="28" value="admin"></td>
                 </tr>
                 <tr>
                   <td align="right">密码：</td>
-                  <td colspan="2"><input name="userpsw" type="password" id="userpsw" style="width:140px;" maxlength="28"></td>
+                  <td colspan="2"><input name="userpsw" type="password" id="userpsw" style="width:140px;" maxlength="28" value="admin"></td>
                   </tr>
                 <tr>
                 <tr>

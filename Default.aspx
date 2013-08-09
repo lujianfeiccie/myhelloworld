@@ -24,7 +24,7 @@
               <li><a href="BookSearch4.aspx" target="_blank">新书检索</a></li><li><a href="BookSearch.aspx" target="_blank">馆藏书目检索</a></li><li><a href="BookSearch2.aspx" target="_blank">情报资料检索</a></li><li><a href="BookSearch3.aspx" target="_blank">本校论文检索</a></li></ul>
        
         <div id="re_book">
-           <div style="background-image:url(images/web_left_dot2.gif); background-position:left top; padding-left:24px; background-repeat:no-repeat; "><a href="BooKBuy.aspx" target="_blank" >图书荐购</a>&nbsp;&nbsp;<img src="Images/web_left_dot1.gif" /></div>
+           <div style="background-image:url(images/web_left_dot2.gif); background-position:left top; padding-left:24px; background-repeat:no-repeat; "><a href="BooKBuy.aspx" target="_blank" >图书荐购</a>&nbsp;&nbsp;<img alt="" src="Images/web_left_dot1.gif" /></div>
         </div>
     </div>
     
@@ -49,29 +49,30 @@
              <asp:Repeater ID="downloadtop" runat="server">
                     <ItemTemplate><li><a title="<%# DataBinder.Eval(Container.DataItem,"title")%>&#10;&#10;下载次数：<%# DataBinder.Eval(Container.DataItem,"down_num")%>" href="DownloadView.aspx?id=<%# DataBinder.Eval(Container.DataItem,"id")%>" target="_blank"><%# myfun.ShortString( DataBinder.Eval(Container.DataItem,"title").ToString(),30,false)%></a></li></ItemTemplate>
                 </asp:Repeater>
+                </ul>
         </div>
     </div>
     
     <div id="links">
-        <select name="xnzy" onChange="javascript:window.open(this.options[this.selectedIndex].value)">
+        <select name="xnzy" onchange="javascript:window.open(this.options[this.selectedIndex].value)">
             <option>&nbsp;&nbsp;&nbsp;&nbsp;====&nbsp;校内资源&nbsp;====&nbsp;&nbsp;&nbsp;&nbsp;</option>
             <asp:Repeater ID="xnzy" runat="server">
                     <ItemTemplate><option value="<%# DataBinder.Eval(Container.DataItem, "url")%>">&nbsp;&nbsp;&nbsp;&nbsp;====&nbsp;<%# DataBinder.Eval(Container.DataItem, "title")%>&nbsp;====&nbsp;&nbsp;&nbsp;&nbsp;</option></ItemTemplate>
                 </asp:Repeater>
         </select>
-        <select name="xwzy" onChange="javascript:window.open(this.options[this.selectedIndex].value)">
+        <select name="xwzy" onchange="javascript:window.open(this.options[this.selectedIndex].value)">
             <option>&nbsp;&nbsp;&nbsp;&nbsp;====&nbsp;校外资源&nbsp;====&nbsp;&nbsp;&nbsp;&nbsp;</option>
             <asp:Repeater ID="xwzy" runat="server">
                     <ItemTemplate><option value="<%# DataBinder.Eval(Container.DataItem, "url")%>">&nbsp;&nbsp;&nbsp;&nbsp;====&nbsp;<%# DataBinder.Eval(Container.DataItem, "title")%>&nbsp;====&nbsp;&nbsp;&nbsp;&nbsp;</option></ItemTemplate>
                 </asp:Repeater>
         </select>
-        <select name="xnlj" onChange="javascript:window.open(this.options[this.selectedIndex].value)">
+        <select name="xnlj" onchange="javascript:window.open(this.options[this.selectedIndex].value)">
             <option>&nbsp;&nbsp;&nbsp;&nbsp;====&nbsp;校内链接&nbsp;====&nbsp;&nbsp;&nbsp;&nbsp;</option>
             <asp:Repeater ID="xnlj" runat="server">
                     <ItemTemplate><option value="<%# DataBinder.Eval(Container.DataItem, "url")%>">&nbsp;&nbsp;&nbsp;&nbsp;====&nbsp;<%# DataBinder.Eval(Container.DataItem, "title")%>&nbsp;====&nbsp;&nbsp;&nbsp;&nbsp;</option></ItemTemplate>
                 </asp:Repeater>
         </select>
-        <select name="xwlj" onChange="javascript:window.open(this.options[this.selectedIndex].value)">
+        <select name="xwlj" onchange="javascript:window.open(this.options[this.selectedIndex].value)">
             <option>&nbsp;&nbsp;&nbsp;&nbsp;====&nbsp;校外链接&nbsp;====&nbsp;&nbsp;&nbsp;&nbsp;</option>
             <asp:Repeater ID="xwlj" runat="server">
                     <ItemTemplate><option value="<%# DataBinder.Eval(Container.DataItem, "url")%>">&nbsp;&nbsp;&nbsp;&nbsp;====&nbsp;<%# DataBinder.Eval(Container.DataItem, "title")%>&nbsp;====&nbsp;&nbsp;&nbsp;&nbsp;</option></ItemTemplate>
@@ -86,15 +87,15 @@
         <div id="web_news_head"><span class="head_title">网站新闻</span><span class="more" onclick="javascript:location.href='NewsList.aspx?type=news'"></span></div>
         <div id="web_news_info">
             <div id="web_news_info_pics">
-                             <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id=scriptmain name=scriptmain codebase="http://download.macromedia.com/pub/shockwave/cabs/
+                             <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="scriptmain" name="scriptmain" codebase="http://download.macromedia.com/pub/shockwave/cabs/
                 flash/swflash.cab#version=6,0,29,0" width="180" height="135">
-                    <param name="movie" value="JS/headpic.swf?bcastr_xml_url=IndexPicNews.aspx">
-                    <param name="quality" value="high">
-                    <param name=scale value=noscale>
-                    <param name="LOOP" value="false">
-                    <param name="menu" value="false">
-                    <param name="wmode" value="transparent">
-                    <embed src="JS/headpic.swf?bcastr_xml_url=IndexPicNews.aspx" width="180" height="140" loop="false" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" salign="T" name="scriptmain" menu="false" wmode="transparent"></embed>
+                    <param name="movie" value="JS/headpic.swf?bcastr_xml_url=IndexPicNews.aspx" />
+                    <param name="quality" value="high" />
+                    <param name="scale" value="noscale" />
+                    <param name="LOOP" value="false" />
+                    <param name="menu" value="false" />
+                    <param name="wmode" value="transparent" />
+                    <embed src="JS/headpic.swf?bcastr_xml_url=IndexPicNews.aspx" width="180" height="140" loop="false" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" salign="T" name="scriptmain" menu="false" wmode="transparent" /> 
                   </object>
             </div>
             <div id="web_news_info_items">
@@ -172,7 +173,7 @@
                     <asp:Repeater ID="newbook" runat="server">
                     <ItemTemplate>
                     <div class="pic"> 
-                            <a href="bookview.aspx?id=<%# DataBinder.Eval(Container.DataItem,"id")%>" title="<%# DataBinder.Eval(Container.DataItem,"title")%>"><img src='<%# DataBinder.Eval(Container.DataItem,"picurl").ToString().Substring(1)%>' border="0" width="100"  height="110"/></a>
+                            <a href="bookview.aspx?id=<%# DataBinder.Eval(Container.DataItem,"id")%>" title="<%# DataBinder.Eval(Container.DataItem,"title")%>"><img alt="" src='<%# DataBinder.Eval(Container.DataItem,"picurl").ToString().Substring(1)%>' border="0" width="100"  height="110"/></a>
                             <p><%# DataBinder.Eval(Container.DataItem,"title")%></p>
                         </div> 
 

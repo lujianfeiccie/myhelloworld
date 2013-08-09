@@ -235,8 +235,8 @@ public class LibWeb
             {
                 while (reader.Read())
                 {
-                    result[0]=reader["_页面名称"].ToString();
-                    result[1] = reader["_详细介绍"].ToString();
+                    result[0]=reader["_页面名称"].ToString(); //result[0]用于存放标题
+                    result[1] = reader["_详细介绍"].ToString();//result[1]用于存放正文内容
                     temptype = reader["_所属类别"].ToString();
                     result[3] = reader["_所属类别"].ToString();
                 }
@@ -265,6 +265,7 @@ public class LibWeb
                 
                 while (reader.Read())
                 {
+                    //result[2]用于存放左侧列表
                     if (reader["_标识字符"].ToString() == typename)
                         result[2] += " <a href=\"ViewPages.aspx?type=" + reader["_标识字符"].ToString() + "\"><div class=\"content_left_guid_item_on\" >" + reader["_页面名称"].ToString() + "</div> </a>";
                     else

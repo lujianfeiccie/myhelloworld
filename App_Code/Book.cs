@@ -180,7 +180,7 @@ public class Book
     {
         int topbefore = (nowpage - 1) * size;
         //sql = "SELECT  * FROM [lib_newbook] t1 WHERE (SELECT count(*) FROM [lib_newbook] t2 WHERE t2.id < t1.id ) > = @StartNum AND (SELECT count(*) FROM [lib_newbook] t2 WHERE t2.id < t1.id) < @EndNum order by istop desc, addtime desc";
-        sql = "select top " + size + " * from [lib_newbook] where id not in(select top "+topbefore+" id from [lib_newbook] order by istop desc,addtime desc ) order by istop desc,addtime desc";
+        sql = "select top " + size + " * from [lib_newbook] where id not in(select top "+topbefore+" id from [lib_newbook] order by addtime desc ) order by addtime desc";
       //  SqlParameter[] myparas ={  
           //  new SqlParameter("@StartNum",SqlDbType.Int),
             //new SqlParameter("@EndNum",SqlDbType.Int)
