@@ -9,15 +9,11 @@
             <td align="left" width="825" bgcolor="#ffffff">
                 <table cellspacing="0" cellpadding="0" width="716" border="0">
                     <tr>
-                        <td class="STYLE11" valign="top"  style="text-align:center" width="716" height="47">
-                            本站地图
+                        <td class="head_title" valign="top"  style="text-align:center" width="716" height="47">
+                            <span class="left_block_head head_title">本站地图</span>
                         </td>
                     </tr>
-                    <tr>
-                        <td class="STYLE4" style="text-align:center" height="24">
-                            <font size="2">发布日期：[2013-8-8] 共阅[<script id="Statis1_Script" src="http://218.199.76.29:80/WCCM/Stat/SiteStatis.ashx?SiteID=1&amp;Kind=Document&amp;nOutput=1&amp;OneDay=&amp;Pick=True"
-                                type="text/javascript"></script>]次</font></td>
-                    </tr>
+                     
                     <tr>
                         <td style="text-align:center" align="left" height="145">
                             <div align="left">
@@ -26,7 +22,7 @@
                                     <tr>
                                         <td style="font-size: 12px; color: #494848; line-height: 22px; font-family: 宋体" valign="top">
                                             <div align="center">
-                                                <table height="487" cellspacing="0" cellpadding="0" width="778" border="0">
+                                                <table   height="487" cellspacing="0" cellpadding="0" width="778" border="0">
                                                     <tr>
                                                         <td style="font-size: 12px; color: #494848; line-height: 22px; font-family: 宋体" width="52"
                                                             height="121">

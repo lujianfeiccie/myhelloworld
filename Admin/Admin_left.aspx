@@ -348,9 +348,9 @@ A:hover { COLOR: #428eff; TEXT-DECORATION: underline}
       <div class="sec_menu" style="WIDTH: 156px">
         <table cellspacing="0" cellpadding="0" width="135" align="center">
         
-          <tr> 
+         <!-- <tr> 
 		  <td height="22"><a href="UserList.aspx?check=no" target="rightFrame">待审用户</a></td>
-          </tr>
+          </tr>-->
            <tr> 
 		  <td height="22"><a href="UserList.aspx?check=yes" target="rightFrame">已审用户</a></td>
           </tr>
