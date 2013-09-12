@@ -100,14 +100,26 @@
             </div>
             <div id="web_news_info_items">
                 <ul>
-                 <asp:Repeater ID="top2news" runat="server">
-                    <ItemTemplate>
-                    <li><span class="lefttitle"><a href="NewsView.aspx?id=<%# DataBinder.Eval(Container.DataItem,"id")%>" title="<%# DataBinder.Eval(Container.DataItem,"title")%>" target="_blank"><%# myfun.ShortString(DataBinder.Eval(Container.DataItem,"title").ToString(),36,false)%></a></span> <span class="rightdate"> <%# IsNew( DataBinder.Eval(Container.DataItem,"pub_time").ToString())%> </span>  </li></ItemTemplate>
-                </asp:Repeater>
-                 <asp:Repeater ID="indexnews" runat="server">
-                    <ItemTemplate>
-                    <li><span class="lefttitle"><a href="NewsView.aspx?id=<%# DataBinder.Eval(Container.DataItem,"id")%>" title="<%# DataBinder.Eval(Container.DataItem,"title")%>" target="_blank"><%# myfun.ShortString(DataBinder.Eval(Container.DataItem,"title").ToString(),36,false)%></a></span>  <span class="rightdate"><%# IsNew( DataBinder.Eval(Container.DataItem,"pub_time").ToString())%>  </span> </li></ItemTemplate>
-                </asp:Repeater>
+                    <asp:Repeater ID="top2news" runat="server">
+                        <ItemTemplate>
+                            <li><span class="lefttitle"><a href="NewsView.aspx?id=<%# DataBinder.Eval(Container.DataItem,"id")%>"
+                                title="<%# DataBinder.Eval(Container.DataItem,"title")%>" target="_blank">
+                                <%# myfun.ShortString(DataBinder.Eval(Container.DataItem,"title").ToString(),36,false)%>
+                            </a></span><span class="rightdate">
+                                <%# IsNew( DataBinder.Eval(Container.DataItem,"pub_time").ToString())%>
+                            </span></li>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                    <asp:Repeater ID="indexnews" runat="server">
+                        <ItemTemplate>
+                            <li><span class="lefttitle"><a href="NewsView.aspx?id=<%# DataBinder.Eval(Container.DataItem,"id")%>"
+                                title="<%# DataBinder.Eval(Container.DataItem,"title")%>" target="_blank">
+                                <%# myfun.ShortString(DataBinder.Eval(Container.DataItem,"title").ToString(),36,false)%>
+                            </a></span><span class="rightdate">
+                                <%# IsNew( DataBinder.Eval(Container.DataItem,"pub_time").ToString())%>
+                            </span></li>
+                        </ItemTemplate>
+                    </asp:Repeater>
                 </ul>
             </div>
         

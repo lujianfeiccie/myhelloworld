@@ -1,0 +1,25 @@
+
+.xlxk { margin-top:15px;}
+
+.xlxk select{ width:95px; line-height:29px; height:29px; float:left; color:#666666; padding:0;}
+.xlxk select option{width:95px; line-height:25px; height:40px; float:left; color:#666666; }
+
+
+.xlxk input{ width:300px; height:25px; float:left; margin-left:10px;color:#666666; padding-left:5px; line-height:25px; margin-right:25px;}
+.xlxk span{ width:60px; height:25px; float:left; color:#666666; padding-left:5px; line-height:25px;  display:block; font-size:12px; cursor:pointer;}
+
+.xlxk_l{ margin-top:15px;}
+
+
+.xlxk_l input{ width:400px; height:25px; float:left; color:#666666; padding-left:5px; line-height:25px; margin-right:15px;}
+
+.xlxk_l span{ width:60px; height:25px; float:left; color:#666666; padding-left:5px; line-height:25px;display:block; font-size:12px; cursor:pointer;}
+
+.xlxk_n{ margin-top:15px;}
+
+
+.xlxk_n input{ width:200px; height:25px; float:left; color:#666666; padding-left:5px; line-height:25px; float:left; margin-right:15px;font-size:12px;}
+.xlxk_n span{ width:60px; height:25px; float:left; color:#666666; padding-left:5px; line-height:25px; float:left;  float:left; display:block; font-size:12px; cursor:pointer;}
+.xlxk span img{  vertical-align: middle;}
+.xlxk_l span img{  vertical-align: middle;}
+.xlxk_n span img{  vertical-align: middle;}

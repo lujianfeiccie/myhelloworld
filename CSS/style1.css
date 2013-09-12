@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{ margin:0; padding:0; font-family:Arial, Helvetica, sans-serif;}
+a{ text-decoration:none; border:0;}
+img,a img, h1, h2, h3, h4, h5, h6, header, footer{ border:0; margin:0; padding:0;}
+body{ background:url(../images/bgbgb.jpg) repeat-x top #ececec;scrollbar-arrow-color: #fff; /*三角箭头的颜色*/
+scrollbar-face-color: #8cb2e3; /*立体滚动条的颜色*/
+scrollbar-3dlight-color: #537bb0; /*立体滚动条亮边的颜
+
+色*/
+scrollbar-highlight-color: #537bb0; /*滚动条空白部分的
+
+颜色*/
+scrollbar-shadow-color: #537bb0; /*立体滚动条阴影的颜
+
+色*/
+scrollbar-darkshadow-color: #537bb0; /*立体滚动条强阴
+
+影的颜色*/
+scrollbar-track-color: #537bb0; /*立体滚动条背景颜色*/
+
+scrollbar-base-color:#537bb0; /*滚动条的基本颜色*/
+Cursor:url(mouse.cur); /*自定义个性鼠标*/
+
+}
+.cl{ clear:both;}
+.top{ position:relative; width:100%; height:34px; background:url(../images/index_01.gif) repeat-x;}
+
+.topn{ width:1005px; height:34px; line-height:34px; margin:0px auto; text-align:right;font-size:12px; color:#fff; cursor:pointer; }
+
+.topn span{ width:80px; height:34px; line-height:34px; margin:0px auto; text-align:right;font-size:12px; color:#fff; cursor:pointer;  float:right; text-align:center;}
+.topn span:hover{ width:80px; height:34px; line-height:34px; margin:0px auto; text-align:right;font-size:12px; color:#fff; cursor:pointer; background:#239ecb; float:right; text-align:center;}
+
+.banner{ width:1005px; margin:0 auto; height:147px; position:relative;;}
+
+.mid{ width:1005px; margin:0 auto; position:relative; background:#fff; }
+
+.mid_l{ width:239px; float:left;}
+.mid_l .navb{ width:100%; height:134px; background:#0f57a4;  }
+.mid_l .sz{ width:100%; height:460px; background:url(../images/index_25.gif) no-repeat; padding-top:8px;}
+
+
+.mid_m{ width:585px; float:left; margin:0 0 0 14px;}
+
+.mid_m .newsa{ width:100%; height:213px; margin-top:4px;}
+.mid_m .shousuo{ width:100%; height:129px; margin-top:20px; }
+.mid_m .xinshu{ width:100%; height:200px;}
+
+
+.mid_r{ width:147px; float:left; margin:0 0 0 14px;}
+
+.mid_r .zn{ width:100%; height:221px;}
+.mid_r .jc{ width:100%; height:293px;}
+.mid_r .gg{ width:100%; height:79px;}
+
+.link{ width:100%; height:27px; background:#d8d8d8; position:relative; margin-top:0px; border-bottom:1px solid #000;}
+.link .linkb{ width:1005px;; height:27px; margin:0 auto;}
+.foot{ width:100%; height:auto; background:#f1f1f1; position:relative;}
+
+.fooft{ width:1005px; height:100px; margin:0px auto; font-size:12px; line-height:30px; text-align:center; color:#333; padding-top:15px;}

@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+.nav{ width:200px; height:auto; margin:0 auto;  } 
+.nav ul{ width:200px; height:auto; margin:0 padding:0;  } 
+.nav ul li{ width:95px; height:25px;  line-height:25px; list-style-type:none; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#fff; float:left; font-weight:bold; text-align:center; margin-top:3px; cursor:pointer; display:block; } 
+.nav ul li:hover{ width:95px; height:25px; line-height:25px; list-style-type:none; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#0d76ad; float:left; font-weight:bold; text-align:center; margin-top:3px; cursor:pointer; display:block; background:#FFFFFF; } 
+
+.szzy_bt{ width:217px; height:41px; margin:0 auto;}
+.szzy_nr{width:217px; height:auto;margin:0 auto;}
+
+
+
+.zn .zn_bt{ width:110px; margin:0 auto; height:26px;}
+.zn .zn_nr{ width:90px; height:auto;  margin:0 auto;margin-top:8px;  }
+.zn .zn_nr ul{ width:90px; margin:0; padding:0; }
+.zn .zn_nr li{ width:90px; height:25px; line-height:25px; background:url(../images/index_19.gif) no-repeat left; font-size:14px; margin-top:6px;  display:block; color:#626262;background-position:2px 50%; text-align:center; cursor:pointer; }
+.zn .zn_nr li:hover{ width:90px; height:25px; line-height:25px; background:url(../images/index_19.gif) no-repeat left #bdbdbd; font-size:14px; margin-top:6px;  display:block; color:#626262; background-position:3px 50%;text-align:center; cursor:pointer;  }
+
+.jc{ width:111px; height:auto; margin:0 auto;}
+.jc ul{ width:111px; height:auto; margin:0 auto; padding:0;}
+.jc ul li span{width:111px; height:34px; line-height:34px; }
+.jc ul li img{   vertical-align: middle;}
+.jc ul li{ width:111px; height:34px; line-height:34px; font-size:14px;  display:block;cursor:pointer; color:#666;}
+.jc ul li:hover{ width:111px; height:34px; line-height:34px; font-size:14px;  display:block;cursor:pointer; background:#0d62ca; color:#fff;}
+.ht{ width:585px; height:25px;}
+.xinshu .xinshu_bt{ width:580px; height:24px; margin:0;}
+.xinshu .xinshu_nr{ width:580px;margin:0; margin-top:20px;}
+.xinshu .xinshu_nr ul{  margin:0; padding:0;}
+.xinshu .xinshu_nr ul li{ width:115px; height:150px; float:left; display:block; margin-right:1px; text-align:center; cursor:pointer;}
+.xinshu .xinshu_nr ul li:hover{ width:115px; height:150px; float:left; display:block; margin-right:1px; text-align:center; background:#f3f3f3;cursor:pointer;}
+.xinshu .xinshu_nr ul li img{ margin-top:10px;}
+.xinshu .xinshu_nr ul li span{ width:100px; height:25px; line-height:25px; text-align:center; font-size:12px;color:#0d76ad; display:block; margin:5px auto;}
+
+.news {background:url(../images/index_09.gif) no-repeat; height:26px;width:585px;}
+.news ul {margin:0px; padding:0px; list-style:none; margin-left:10px;}
+.news li {display:inline; line-height:26px;}
+.news li a {line-height:26px;color:#7d7c7a; text-decoration:none; padding:4px 5px 5px 5px; font-size:12px; font-weight:bold; }
+.news li a.tabactive {border-left:1px solid #98c5e2; border-right:1px solid #98c5e2; color:#0f57a4; background-color:#ffffff; font-weight:bold;  position:relative;font-size:12px;}
+#tabcontent1,#tabcontent2,#tabcontent3 { width:585px;padding:6px 0px; font-size:12px; margin-bottom:5px; margin:10px 0; }
+#anothercontent1,#anothercontent2, #anothercontent3, #anothercontent4,#anothercontent5, #anothercontent6,#anothercontent7
+{ width:575px; height:100px;padding:6px 0px; font-size:12px; margin-bottom:5px; text-align:center; background:url(../images/index_29.gif) repeat-x top; padding-left:10px;}
+.news_n a{ text-decoration:none; color:#808080;}
+.news_n a:hover{text-decoration:underline;}
+
+
+
+.mid_m .newsa .nimag{ width:188px; height:145px; line-height:145px; float:left;}
+
+.mid_m .newsa .news_n{ width:380px; height: 145px; float:left; margin-left:13px;}
+.mid_m .newsa .news_n li{ width:370px; height:22px; line-height:22px; font-size:12px; color:#7c7c7c; display:block; padding-left:10px; margin-bottom:3px;}
+.mid_m .newsa .news_n li span{ width:100px; height:22px; line-height:22px; margin-left:10px; color:#666666; }
+
+
+
+.linkb .link_bt{ width:100px; height:27px; line-height:26px; margin:0px 0;
+
+font-size:12px; font-weight:bold; color:#656565; float:left; text-align:center;}
+.linkb .link_nr{ width:905px; height:30px; float:left;margin:0px 0;}
+.linkb .link_nr li{ width:120px; height:30px; line-height:30px; text-align:center; display:block; float:left;font-size:12px;  color:#656565;}
+
+
+
+#nav { 
+MARGIN: 7px auto 0px; HEIGHT: 117px 
+} 
+#nav #hotnews { 
+BORDER-BOTTOM-WIDTH: 0px; HEIGHT: 89px 
+} 
+#Scroll { 
+CLEAR: both; PADDING-LEFT: 100px; FONT-SIZE: 12px; BACKGROUND: url(../images/n_scroll.gif) no-repeat 18px 7px; MARGIN: 0px auto; WIDTH: 905px; COLOR: #c2130e; LINE-HEIGHT: 27px;  HEIGHT: 27px; TEXT-ALIGN: left } 
+#Scroll A { 
+PADDING-RIGHT: 20px; PADDING-LEFT: 10px; BACKGROUND: url(http://files.jb51.net/file_images/article/201212/flscroll/n_bar.gif)) no-repeat 0px 0px; COLOR: #848484; MARGIN-RIGHT: 5px; TEXT-DECORATION: none 
+} 
+#Scroll A.s_end { 
+PADDING-RIGHT: 0px; MARGIN-LEFT: 8px 
+} 

@@ -16,7 +16,7 @@
         <div id="top_right"><img src="Images/set_index.gif" style="cursor:pointer;" onclick="addCookie('军械士官学校图书馆','http://edu.ditaner.net')"/>&nbsp;<img src="Images/set_favorite.gif" style="cursor:pointer;" onclick="setHomepage('军械士官学校图书馆','http://Default.aspx');" />&nbsp;<img style="cursor:pointer;" onclick="javascript:location.href='LibRSS.aspx'" src="Images/get_new_books.gif" /></div>
         <div id="top_guid">
             <ul>
-                <li class="index_guid" ><a href="Default.aspx">首页</a></li>
+                <li class="index_guid" ><a href="index.aspx">首页</a></li>
                 <li ><a href="ViewPages.aspx" >本馆概况</a></li>
                 <li><a href="ViewPages.aspx?type=xz1">读者服务</a></li>
                 <li><a href="LibSearch.aspx">书目查询</a></li>

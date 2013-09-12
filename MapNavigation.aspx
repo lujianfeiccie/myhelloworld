@@ -22,7 +22,7 @@
                                     <tr>
                                         <td style="font-size: 12px; color: #494848; line-height: 22px; font-family: 宋体" valign="top">
                                             <div align="center">
-                                                <table   height="487" cellspacing="0" cellpadding="0" width="778" border="0">
+                                                <table  height="487" cellspacing="0" cellpadding="0" width="778" border="0">
                                                     <tr>
                                                         <td style="font-size: 12px; color: #494848; line-height: 22px; font-family: 宋体" width="52"
                                                             height="121">
@@ -60,8 +60,8 @@
                                                                     target="_self"><span title="入室须知">入室须知</span></a></span></p>
                                                             <p>
                                                                 <span id="ChannelList12"><a href="ViewPages.aspx?type=sj"
-                                                                    target="_self"><span title="服务时间">服务时间</span></a><br>
-                                                                    <br>
+                                                                    target="_self"><span title="服务时间">服务时间</span></a><br/>
+                                                                    <br/>
                                                                 </span>
                                                             </p>
                                                         </td>
@@ -97,8 +97,8 @@
                                                                     <span title="新书发布">新书发布</span></a></span></p>
                                                             <p>
                                                                 <span id="ChannelList18"><a href="PaperSearch.aspx"
-                                                                    target="_self"><span title="馆藏期刊检索">馆藏期刊检索</span></a><br>
-                                                                    <br>
+                                                                    target="_self"><span title="馆藏期刊检索">馆藏期刊检索</span></a><br/>
+                                                                    <br/>
                                                                 </span>
                                                             </p>
                                                         </td>
@@ -107,7 +107,7 @@
                                                             <span id="ChannelList14"><a href="CDSearch.aspx" target="_self"><span title="科技查新">
                                                                 随书光盘</span></a></span> <span id="ChannelList17" title="随书光盘"><a href="../../../xxfw/Document/365/365.html">
                                                           </td>
-                                                        
+                                                       </tr> 
                                                     <tr>
                                                         <td style="font-size: 12px; color: #494848; line-height: 22px; font-family: 宋体" width="52"
                                                             height="122">
