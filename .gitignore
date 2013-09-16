@@ -3,3 +3,6 @@ cdsearch/
 FileUpload/
 *.[config]
 *.[sln]
+*.sln
+*.config
+*.bak
