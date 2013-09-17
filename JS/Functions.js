@@ -80,6 +80,7 @@ function vote()
 {
     var optionid=$("[name='web_vote_value'][checked]").val();
     var originhtml=$("#myvote").html();
+    
     if(optionid==null)
     {
         alert("请选择！");

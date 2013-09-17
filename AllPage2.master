@@ -3,7 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
-<head id="Head1" runat="server">
+<head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>湖北军械士官学校</title>
 <link rel="stylesheet" href="CSS/style1.css" type="text/css" />
@@ -13,6 +13,9 @@
 <script type="text/javascript" src="JS/jquery.min.js"></script>
 <script type="text/javascript" src="JS/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="JS/xixi.js"></script>
+<!--Js for Research-->
+<script type="text/javascript" src="JS/jquery.js" language="javascript"></script>
+<script type="text/javascript" src="JS/Functions.js"></script>
 <%--<script type="text/javascript" src="JS/tab.js"></script>--%>
 <style type="text/css">
 a:link,a:visited
@@ -169,166 +172,7 @@ color:#000000;
  </div>
  
  </div>
-<%-- <div class="mid_m">
- <div class="newsa">
-   <div class="news">
-<ul>
-<li><a href="#" onmouseover="easytabs('1', '1');" onfocus="easytabs('1', '1');" onclick="return false;"  title="" id="tablink1">新闻中心</a></li>
-<li><a href="#" onmouseover="easytabs('1', '2');" onfocus="easytabs('1', '2');" onclick="return false;"  title="" id="tablink2">资源动态 </a></li>
-<li><a href="#" onmouseover="easytabs('1', '3');" onfocus="easytabs('1', '3');" onclick="return false;"  title="" id="tablink3">新书通告 </a></li>
-</ul>
-</div>
-<!--End of the Tabmenu 1 -->
 
-
-<!--Start Tabcontent 1 -->
-<div id="tabcontent1">
-<div class="news_n">
-<ul class="mynews">
-</ul>
-</div>
-</div>
-<!--End Tabcontent 1-->
-
-<!--Start Tabcontent 2-->
-<div id="tabcontent2">
-<div class="news_n">
-<ul>
-    
-</ul>
-
-</div>
-
-
-</div>
-<!--End Tabcontent 2 -->
-
-<!--Start Tabcontent 3-->
-<div id="tabcontent3">
-<div class="news_n">
-<ul class="mynews">
-    
-</ul>
-
-</div>
-
-
-</div>
-</div>
-   <div class="shousuo">
-   <div class="news">
-<ul>
-<li><a href="#" onmouseover="easytabs('2', '1');" onfocus="easytabs('2', '1');"  onclick="return false;" title="" id="anotherlink1">全部</a></li>
-<li><a href="#" onmouseover="easytabs('2', '2');" onfocus="easytabs('2', '2');"  onclick="return false;" title="" id="anotherlink2">馆藏图书 </a></li>
-<li><a href="#" onmouseover="easytabs('2', '3');" onfocus="easytabs('2', '3');"  onclick="return false;" title="" id="anotherlink3"> 期刊 </a></li>
-<li><a href="#" onmouseover="easytabs('2', '4');" onfocus="easytabs('2', '4');"  onclick="return false;" title="" id="anotherlink4"> 电子书</a></li>
-<li><a href="#" onmouseover="easytabs('2', '5');" onfocus="easytabs('2', '5');"  onclick="return false;" title="" id="anotherlink5"> 视频 </a></li>
-<li><a href="#" onmouseover="easytabs('2', '6');" onfocus="easytabs('2', '6');"  onclick="return false;" title="" id="anotherlink6">军工信息    </a></li>
-<li><a href="#" onmouseover="easytabs('2', '7');" onfocus="easytabs('2', '7');"  onclick="return false;" title="" id="anotherlink7"> 我的图书馆</a></li>
-</ul>
-</div>
-<!--End of the Tabmenu 2 -->
-
-
-<div id="anothercontent1">
-<div class="xlxk">
-<select name="" >
-  <option value="0">科技</option>
-  <option value="1">人文</option>
-</select>
-<input name="" type="text"  value="--请输入关键字--"><span><img src="images/index_35.gif"  /></span>
-</div>
-<div class="cl"></div>
-</div>
-<div id="anothercontent2">
-<div class="xlxk_l">
-<input name="" type="text"  value="管藏图书书籍"><span><img src="images/index_35.gif"  /></span>
-</div>
-
-</div>
-<div id="anothercontent3">
-<div class="xlxk_l">
-
-<input name="" type="text" /  value="1"><span><img src="images/index_35.gif"  /></span>
-</div>
-</div>
-<div id="anothercontent4">
-<div class="xlxk_l">
-<input name="" type="text" /  value="2"><span><img src="images/index_35.gif"  /></span>
-</div>
-
-</div>
-<div id="anothercontent5">
-<div class="xlxk_l">
-
-<input name="" type="text" / value="3"><span><img src="images/index_35.gif"  /></span>
-</div>
-
-</div>
-<div id="anothercontent6">
-
-<div class="xlxk_l">
-
-<input name="" type="text" /  value="4"><span><img src="images/index_35.gif"  /></span>
-</div>
-
-</div>
-
-<div id="anothercontent7">
-<div class="xlxk_n">
-
-<input name="" type="text" /  value="请输入用户名">
-<input name="" type="password" /  value="            ">
-<span><img src="images/denglu.gif" /></span>
-</div>
-
-</div>
-   </div>
-   <div class="ht"><img src="images/index_39.gif" width="585" height="25" /></div>
-   <div class="xinshu">
-   <div class="xinshu_bt"><img src="images/index_42.gif" width="580" height="24" /></div>
-   <div class="xinshu_nr">
-      <ul>
-        <li><img src="images/index_49.gif" width="71" height="88" /><span>书名</span></li>
-        <li><img src="images/index_49.gif" width="71" height="88" /><span>书名</span></li>
-        <li><img src="images/index_49.gif" width="71" height="88" /><span>书名</span></li>
-        <li><img src="images/index_49.gif" width="71" height="88" /><span>书名</span></li>
-        <li><img src="images/index_49.gif" width="71" height="88" /><span>书名</span></li>
-      </ul>
-   </div>
-   </div>
- </div>--%>
- <%--<div class="mid_r">
-   <div class="zn">
-    <div class="zn_bt"><img src="images/index_13.gif" /></div>
-    <div class="zn_nr">
-    <ul class="my">
-    <li><a href="BookList.aspx" >新书荐购</a></li>
-    <li>新书订阅</li>
-    <li><a href="CDSearch.aspx">随书光盘</a></li>
-    <li><a href="">统计分析</a></li>
-    <li><a href="">数字教育</a></li>
-    <li><a href="DownloadList.aspx?type=download">软件下载</a></li>
-     <!--<div class="cl"></div>-->
-    </ul></div>
-   
-   </div>
-   <div class="jc">
-     <ul class="my">
-       <li><a href="ViewPages.aspx"><img src="images/icon01.gif" width="34" height="36" />本馆简介 </a></li>
-       <li><a href="ViewPages.aspx?type=xz1"><img src="images/icon02.gif" width="34" height="36" />入馆须知 </a></li>
-       <li><a href="ViewPages.aspx?type=sj"><img src="images/icon03.gif" width="34" height="36" />开发时间 </a></li>
-       <li><a href="ViewPages.aspx?type=fb"><img src="images/icon04.gif" width="34" height="36" />馆藏分布 </a></li>
-       <li><a href="ViewPages.aspx?type=xz1"><img src="images/icon05.gif" width="34" height="36" />规章制度</a></li>
-       <li><a href="DownloadList.aspx?type=wt"><img src="images/icon06.gif" width="34" height="36" />常见问题 </a></li>
-       <li><a href="NoteList.aspx?type=zx"><img src="images/icon07.gif" width="34" height="36" />读者留言</a></li>
-       <li><a href=""><img src="images/icon08.gif" width="34" height="36" />在线调查</a></li>
-
-     </ul>
-   
-   </div>
-   <div class="gg"><img src="images/index_55.gif" width="147" height="79" /></div>
-  </div>--%>
     <div id="content">
         <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
         </asp:contentplaceholder>

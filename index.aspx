@@ -391,7 +391,7 @@ color:#000000;
        <li><a href="ViewPages.aspx?type=xz1"><img src="images/icon05.gif" width="34" height="36" />规章制度</a></li>
        <li><a href="DownloadList.aspx?type=wt"><img src="images/icon06.gif" width="34" height="36" />常见问题 </a></li>
        <li><a href="NoteList.aspx?type=zx"><img src="images/icon07.gif" width="34" height="36" />读者留言</a></li>
-       <li><a href=""><img src="images/icon08.gif" width="34" height="36" />在线调查</a></li>
+       <li><a href="research.aspx"><img src="images/icon08.gif" width="34" height="36" />在线调查</a></li>
 
      </ul>
    

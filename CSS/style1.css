@@ -4,24 +4,24 @@
 *{ margin:0; padding:0; font-family:Arial, Helvetica, sans-serif;}
 a{ text-decoration:none; border:0;}
 img,a img, h1, h2, h3, h4, h5, h6, header, footer{ border:0; margin:0; padding:0;}
-body{ background:url(../images/bgbgb.jpg) repeat-x top #ececec;scrollbar-arrow-color: #fff; /*ä¸‰è§’ç®­å¤´çš„é¢œè‰²*/
-scrollbar-face-color: #8cb2e3; /*ç«‹ä½“æ»šåŠ¨æ¡çš„é¢œè‰²*/
-scrollbar-3dlight-color: #537bb0; /*ç«‹ä½“æ»šåŠ¨æ¡äº®è¾¹çš„é¢œ
+body{ background:url(../images/bgbgb.jpg) repeat-x top #ececec;scrollbar-arrow-color: #fff; /*Èı½Ç¼ıÍ·µÄÑÕÉ«*/
+scrollbar-face-color: #8cb2e3; /*Á¢Ìå¹ö¶¯ÌõµÄÑÕÉ«*/
+scrollbar-3dlight-color: #537bb0; /*Á¢Ìå¹ö¶¯ÌõÁÁ±ßµÄÑÕ
 
-è‰²*/
-scrollbar-highlight-color: #537bb0; /*æ»šåŠ¨æ¡ç©ºç™½éƒ¨åˆ†çš„
+É«*/
+scrollbar-highlight-color: #537bb0; /*¹ö¶¯Ìõ¿Õ°×²¿·ÖµÄ
 
-é¢œè‰²*/
-scrollbar-shadow-color: #537bb0; /*ç«‹ä½“æ»šåŠ¨æ¡é˜´å½±çš„é¢œ
+ÑÕÉ«*/
+scrollbar-shadow-color: #537bb0; /*Á¢Ìå¹ö¶¯ÌõÒõÓ°µÄÑÕ
 
-è‰²*/
-scrollbar-darkshadow-color: #537bb0; /*ç«‹ä½“æ»šåŠ¨æ¡å¼ºé˜´
+É«*/
+scrollbar-darkshadow-color: #537bb0; /*Á¢Ìå¹ö¶¯ÌõÇ¿Òõ
 
-å½±çš„é¢œè‰²*/
-scrollbar-track-color: #537bb0; /*ç«‹ä½“æ»šåŠ¨æ¡èƒŒæ™¯é¢œè‰²*/
+Ó°µÄÑÕÉ«*/
+scrollbar-track-color: #537bb0; /*Á¢Ìå¹ö¶¯Ìõ±³¾°ÑÕÉ«*/
 
-scrollbar-base-color:#537bb0; /*æ»šåŠ¨æ¡çš„åŸºæœ¬é¢œè‰²*/
-Cursor:url(mouse.cur); /*è‡ªå®šä¹‰ä¸ªæ€§é¼ æ ‡*/
+scrollbar-base-color:#537bb0; /*¹ö¶¯ÌõµÄ»ù±¾ÑÕÉ«*/
+Cursor:url(mouse.cur); /*×Ô¶¨Òå¸öĞÔÊó±ê*/
 
 }
 .cl{ clear:both;}
@@ -59,3 +59,11 @@ Cursor:url(mouse.cur); /*è‡ªå®šä¹‰ä¸ªæ€§é¼ æ ‡*/
 .foot{ width:100%; height:auto; background:#f1f1f1; position:relative;}
 
 .fooft{ width:1005px; height:100px; margin:0px auto; font-size:12px; line-height:30px; text-align:center; color:#333; padding-top:15px;}
+
+/*¶ş¼¶Ò³Ãæ*/
+.content_center_info{width:720px; float:left; background-color:#ffffff;margin:10px;}
+.content_center_info_head{background:url(../images/index_09.gif) no-repeat; height:26px;width:585px;}
+.content_center_info_head .head_title{ line-height:26px;color:#7d7c7a; text-decoration:none; padding:4px 5px 5px 5px; font-size:12px; font-weight:bold; }
+.content_center_info .content_center_info_ul{ margin-top:0px;}
+//.content_center_info_ul li:first-child { margin-top:20px;margin-bottom:10px;color:#000000;}
+//.content_center_info_ul li {color:#000000;padding:1px;}
