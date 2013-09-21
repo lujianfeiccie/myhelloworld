@@ -60,10 +60,4 @@ Cursor:url(mouse.cur); /*自定义个性鼠标*/
 
 .fooft{ width:1005px; height:100px; margin:0px auto; font-size:12px; line-height:30px; text-align:center; color:#333; padding-top:15px;}
 
-/*二级页面*/
-.content_center_info{width:720px; float:left; background-color:#ffffff;margin:10px;}
-.content_center_info_head{background:url(../images/index_09.gif) no-repeat; height:26px;width:585px;}
-.content_center_info_head .head_title{ line-height:26px;color:#7d7c7a; text-decoration:none; padding:4px 5px 5px 5px; font-size:12px; font-weight:bold; }
-.content_center_info .content_center_info_ul{ margin-top:0px;}
-//.content_center_info_ul li:first-child { margin-top:20px;margin-bottom:10px;color:#000000;}
-//.content_center_info_ul li {color:#000000;padding:1px;}
+ 

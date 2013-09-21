@@ -10,6 +10,8 @@
 <link rel="stylesheet" href="CSS/nrstyle.css" type="text/css" />
 <link rel="stylesheet" href="CSS/kj.css" type="text/css" />
 <link rel="stylesheet" type="text/css" href="CSS/xl.css" />
+<!--旧CSS-->
+<link type="text/css" rel="Stylesheet" href="CSS/All.css" />
 <script type="text/javascript" src="JS/jquery.min.js"></script>
 <script type="text/javascript" src="JS/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="JS/xixi.js"></script>
@@ -59,7 +61,7 @@ color:#000000;
   <div class="nav">
      <ul>
       <li><a href="index.aspx">首页</a></li>
-      <li><a href="ViewPages.aspx">本馆概况</a></li>
+      <li><a href="ViewPagesNew.aspx">本馆概况</a></li>
       <li><a href="LibZYPage.aspx">数字资源</a></li>
       <li><a href="ViewPages.aspx?type=xz1">读书指南</a></li>
       <li><a href="ViewPages.aspx?type=lc">服务指南</a></li> 
