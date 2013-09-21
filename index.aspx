@@ -59,10 +59,10 @@ color:#000000;
   <div class="nav">
      <ul>
       <li><a href="index.aspx">首页</a></li>
-      <li><a href="ViewPages.aspx">本馆概况</a></li>
+      <li><a href="ViewPagesNew.aspx">本馆概况</a></li>
       <li><a href="LibZYPage.aspx">数字资源</a></li>
-      <li><a href="ViewPages.aspx?type=xz1">读书指南</a></li>
-      <li><a href="ViewPages.aspx?type=lc">服务指南</a></li> 
+      <li><a href="ViewPagesNew.aspx?type=xz1">读书指南</a></li>
+      <li><a href="ViewPagesNew.aspx?type=lc">服务指南</a></li> 
       <li><a href="notelist.aspx?type=mail">馆长信箱</a></li>
       <li><a href="MapNavigation.aspx">本站地图</a></li>
       <li><a href="index.aspx">学校首页</a></li>
@@ -196,7 +196,6 @@ color:#000000;
                 </a>  <span>
                 <%# IsNew( DataBinder.Eval(Container.DataItem,"pub_time").ToString())%>
             </span>
-           
             </li>
         </ItemTemplate>
     </asp:Repeater>

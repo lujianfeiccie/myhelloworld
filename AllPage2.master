@@ -16,7 +16,7 @@
 <!--Js for Research-->
 <script type="text/javascript" src="JS/jquery.js" language="javascript"></script>
 <script type="text/javascript" src="JS/Functions.js"></script>
-<%--<script type="text/javascript" src="JS/tab.js"></script>--%>
+<script type="text/javascript" src="JS/tab.js"></script>
 <style type="text/css">
 a:link,a:visited
 {
@@ -52,9 +52,6 @@ color:#000000;
       <param name="wmode" value="transparent">
       <embed src="images/t_b.swf" quality="high" wmode="transparent" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="1005" height="147"></embed>
     </object> 
-
-
-
 </div>
 <div class="mid">
  <div class="mid_l">
