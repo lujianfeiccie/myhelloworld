@@ -9,8 +9,7 @@
 <li><a href="#" onmouseover="easytabs('1', '3');" onfocus="easytabs('1', '3');" onclick="return false;"  title="" id="tablink3">新书通告 </a></li>
 </ul>
 </div>
-<!--End of the Tabmenu 1 -->
-<!--Start Tabcontent 1 -->
+
 <div id="tabcontent1">
 <div class="nimag"><img src="images/index_22.gif" width="188" height="145" alt=""/></div>
 <div class="news_n">
@@ -44,9 +43,7 @@
 </div>
 
 </div>
-<!--End Tabcontent 1-->
 
-<!--Start Tabcontent 2-->
 <div id="tabcontent2">
 <div class="nimag"><img src="images/index_22.gif" width="188" height="145" /></div>
 <div class="news_n">
@@ -65,9 +62,7 @@
 
 
 </div>
-<!--End Tabcontent 2 -->
 
-<!--Start Tabcontent 3-->
 <div id="tabcontent3">
 <div class="nimag"><img src="images/index_22.gif" width="188" height="145" /></div>
 <div class="news_n">
@@ -101,10 +96,7 @@
 <li><a href="#" onmouseover="easytabs2('1', '7');" onfocus="easytabs2('2', '7');"  onclick="return false;" title="" id="anotherlink7"> 我的图书馆</a></li>
 </ul>
 </div>
-<!--End of the Tabmenu 2 -->
 
-
-<!--Start Tabcontent 1 -->
 <div id="anothercontent1">
 <div class="xlxk">
 <select name="" >
@@ -115,27 +107,21 @@
 </div>
 <div class="cl"></div>
 </div>
-<!--End Tabcontent 1-->
 
-<!--Start Tabcontent 2-->
 <div id="anothercontent2">
 <div class="xlxk_l">
 <input name="" type="text"  value="管藏图书书籍"><span><img src="images/index_35.gif"  /></span>
 </div>
 
 </div>
-<!--End Tabcontent 2 -->
 
-<!--Start Tabcontent 3-->
 <div id="anothercontent3">
 <div class="xlxk_l">
 
 <input name="" type="text" /  value="1"><span><img src="images/index_35.gif"  /></span>
 </div>
 </div>
-<!--End Tabcontent 3-->
 
-<!--Start Tabcontent 4-->
 <div id="anothercontent4">
 <div class="xlxk_l">
 
@@ -143,9 +129,7 @@
 </div>
 
 </div>
-<!--End Tabcontent 4-->
 
-<!--Start Tabcontent 5-->
 <div id="anothercontent5">
 <div class="xlxk_l">
 
@@ -153,9 +137,7 @@
 </div>
 
 </div>
-<!--End Tabcontent 5-->
 
-<!--Start Tabcontent 6-->
 <div id="anothercontent6">
 
 <div class="xlxk_l">
@@ -205,7 +187,7 @@
     <li><a href="">统计分析</a></li>
     <li><a href="">数字教育</a></li>
     <li><a href="DownloadList.aspx?type=download">软件下载</a></li>
-     <!--<div class="cl"></div>-->
+
     </ul></div>
    
    </div>

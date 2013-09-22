@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="CSS/kj.css" type="text/css" />
 <link rel="stylesheet" type="text/css" href="CSS/xl.css" />
 <!--旧CSS-->
-<link type="text/css" rel="Stylesheet" href="CSS/All.css" />
+<!--<link type="text/css" rel="Stylesheet" href="CSS/All.css" />-->
 <script type="text/javascript" src="JS/jquery.min.js"></script>
 <script type="text/javascript" src="JS/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="JS/xixi.js"></script>
