@@ -150,11 +150,22 @@
 
 <div id="anothercontent7">
 <div class="xlxk_n">
-
-<input name="" type="text" /  value="请输入用户名">
-
-<input name="" type="password" /  value="            ">
-<span><img src="images/denglu.gif" /></span>
+    <form id="login" name="login" action="LoginNew.aspx?act=in" method="post">
+    <% if (Session["username"] != null)
+       { %>
+       <a href="myInfoNew.aspx">个人信息</a>
+       <a href="myLibNew.aspx">借阅信息</a>
+       <a href="myhistory.aspx">借阅历史</a>
+       <a href="MyFavorite.aspx">我的书单</a>
+       <a href="LoginNew.aspx?act=out">退出登录</a>
+    <%}
+      else
+      { %>
+    <input id="username" name="username" type="text" /  value="">
+    <input id="password" name="password" type="password" /  value="">
+    <span onclick="javascript:login.submit();"><img src="images/denglu.gif"  /></span>
+     <%} %>
+    </form>
 </div>
 
 </div>

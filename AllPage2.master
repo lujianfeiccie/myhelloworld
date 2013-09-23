@@ -20,28 +20,11 @@
 <script type="text/javascript" src="JS/Functions.js"></script>
 <!--For the index.aspx-->
 <!--<script type="text/javascript" src="JS/tab.js"></script>-->
-<style type="text/css">
-a:link,a:visited
-{
-color:#FFFFFF
-}
-a:hover {
-color:#0000FF
-}
-.my 
-a
-{
-color:#000000;
-}
-.mynews
-a
-{
-color:#000000;
-}
-</style>
+<!--For the statistic-->
+<script type="text/javascript" src="JS/statistic.js"></script>
 </head>
 <body>
-    <form id="form1" runat="server">
+    
     <div>
     <div class="top" >
 <div class="topn"><span>旧版本</span> <span>联系我们</span><span> 加入收藏</span></div>
@@ -61,14 +44,14 @@ color:#000000;
  <div class="navb">
   <div class="nav">
      <ul>
-      <li><a href="index.aspx">首页</a></li>
-      <li><a href="ViewPagesNew.aspx">本馆概况</a></li>
-      <li><a href="LibZYPageNew.aspx">数字资源</a></li>
-      <li><a href="ViewPagesNew.aspx?type=xz1">读书指南</a></li>
-      <li><a href="ViewPagesNew.aspx?type=lc">服务指南</a></li> 
-      <li><a href="notelistNew.aspx?type=mail">馆长信箱</a></li>
-      <li><a href="MapNavigationNew.aspx">本站地图</a></li>
-      <li><a href="index.aspx">学校首页</a></li>
+      <li><span onclick="location.href='index.aspx'">首页</span></li>
+      <li><span onclick="location.href='ViewPagesNew.aspx'">本馆概况</span></li>
+      <li><span onclick="location.href='LibZYPageNew.aspx'">数字资源</span></li>
+      <li><span onclick="location.href='ViewPagesNew.aspx?type=xz1'">读书指南</span></li>
+      <li><span onclick="location.href='ViewPagesNew.aspx?type=lc'">服务指南</span></li> 
+      <li><span onclick="location.href='notelistNew.aspx?type=mail'">馆长信箱</span></li>
+      <li><span onclick="location.href='MapNavigationNew.aspx'">本站地图</span></li>
+      <li><span onclick="location.href='index.aspx'">学校首页</span></li>
       
      </ul>
   
@@ -85,11 +68,11 @@ color:#000000;
 
             <li class="dropdown">
                 <ul>
-                    <li><a href="http://27.120.80.224/EasyMadl/uaspx_madl/Search_Common.aspx?sid=1&dcode=EBOOK002" >本校教程</a></li>
-                       <li><a href="http://27.120.80.224/EasyMadl/uaspx_madl/Search_Common.aspx?sid=1&dcode=JNART13202" >本校论文</a></li>
-                    <li><a href="BookSearch2New.aspx?type=yj">教学研究资料</a></li>
-                    <li><a href="BookSearch2New.aspx?type=xs">科研学术动态</a></li>
-                    <li><a href="http://27.120.80.224/EasyMadl/uaspx_madl/Search_Common.aspx?sid=1&dcode=JNART13201">军械士官</a></li>
+                    <li><span onclick="location.href='http://27.120.80.224/EasyMadl/uaspx_madl/Search_Common.aspx?sid=1&dcode=EBOOK002" >本校教程</span></li>
+                       <li><span onclick="location.href='http://27.120.80.224/EasyMadl/uaspx_madl/Search_Common.aspx?sid=1&dcode=JNART13202" >本校论文</span></li>
+                    <li><span onclick="location.href='BookSearch2New.aspx?type=yj'">教学研究资料</span></li>
+                    <li><span onclick="location.href='BookSearch2New.aspx?type=xs'">科研学术动态</span></li>
+                    <li><span onclick="location.href='http://27.120.80.224/EasyMadl/uaspx_madl/Search_Common.aspx?sid=1&dcode=JNART13201'">军械士官</span></li>
                 </ul>
 			</li>
           </ul>
@@ -101,11 +84,11 @@ color:#000000;
 
             <li class="dropdown">
                 <ul>
-                    <li><a href="http://27.120.80.230:9988/index.action" >书生之家</a></li>
-                    <li><a href="http://27.120.80.224:8012/" >博看期刊</a></li>
-                    <li><a href="http://27.120.80.232:8088/C/Periodical.aspx">万方期刊</a></li>
-                    <li><a href="http://27.120.80.238:81/">外文电子书库</a></li>
-                    <li><a href="http://27.120.80.232:90/">中国标准全文库</a></li>
+                    <li><span onclick="location.href='http://27.120.80.230:9988/index.action'" >书生之家</span></li>
+                    <li><span onclick="location.href='http://27.120.80.224:8012/'" >博看期刊</span></li>
+                    <li><span onclick="location.href='http://27.120.80.232:8088/C/Periodical.aspx'">万方期刊</span></li>
+                    <li><span onclick="location.href='http://27.120.80.238:81/'">外文电子书库</span></li>
+                    <li><span onclick="location.href='http://27.120.80.232:90/'">中国标准全文库</span></li>
                   
                 </ul>
 			</li>
@@ -118,11 +101,11 @@ color:#000000;
 
             <li class="dropdown">
                 <ul>
-                    <li><a href="http://www.nm2.lib.kjld.mtn/easymadl/uaspx_madl/Search_Common.aspx?sid=1&dcode=JNART" >军事期刊库</a></li>
-                    <li><a href="http://27.120.80.238:8088/" >军事图书库</a></li>
-                    <li><a href="http://27.120.80.238:8088/">军校外文资源服务系统</a></li>
-                    <li><a href="http://27.120.80.238/chineseebook">中文通用数字图书馆</a></li>
-                    <li><a href="http://27.120.80.77:8880/">internet信息资源集成系统.</a></li>
+                    <li><span onclick="location.href='http://www.nm2.lib.kjld.mtn/easymadl/uaspx_madl/Search_Common.aspx?sid=1&dcode=JNART'">军事期刊库</span></li>
+                    <li><span onclick="location.href='http://27.120.80.238:8088/'" >军事图书库</span></li>
+                    <li><span onclick="location.href='http://27.120.80.238:8088/'">军校外文资源服务系统</span></li>
+                    <li><span onclick="location.href='http://27.120.80.238/chineseebook'">中文通用数字图书馆</span></li>
+                    <li><span onclick="location.href='http://27.120.80.77:8880/'">internet信息资源集成系统.</span></li>
                 </ul>
 			</li>
           </ul>
@@ -135,12 +118,12 @@ color:#000000;
 
             <li class="dropdown">
                 <ul>
-                    <li><a href="http://27.120.80.87/zywz/dkdd/course/index.asp" >地空导弹  </a></li>
-                    <li><a href="http://27.120.80.87/zywz/zcxs/course/index.asp" >侦查校射雷达  </a></li>
-                    <li><a href="http://27.120.80.87/zywz/qwqwx/course/index.asp">轻武器维修  </a></li>
-                    <li><a href="http://z-wqxtyy.jxsg.mtn/web/">武器系统液压  </a></li>
-                    <li><a href="http://27.120.80.87/zywz/jxccgl/">军械仓库管理  </a></li>
-                    <li><a href="http://27.120.80.87/zywz/gpwx">高炮维修  </a></li>
+                    <li><span onclick="location.href='http://27.120.80.87/zywz/dkdd/course/index.asp'">地空导弹  </span></li>
+                    <li><span onclick="location.href='http://27.120.80.87/zywz/zcxs/course/index.asp'">侦查校射雷达  </span></li>
+                    <li><span onclick="location.href='http://27.120.80.87/zywz/qwqwx/course/index.asp'">轻武器维修  </span></li>
+                    <li><span onclick="location.href='http://z-wqxtyy.jxsg.mtn/web/'">武器系统液压  </span></li>
+                    <li><span onclick="location.href='http://27.120.80.87/zywz/jxccgl/'">军械仓库管理  </span></li>
+                    <li><span onclick="location.href='http://27.120.80.87/zywz/gpwx'">高炮维修  </span></li>
                     
                 </ul>
 			</li>
@@ -151,10 +134,10 @@ color:#000000;
 
             <li class="dropdown">
                 <ul>
-                  <li><a href="BookSearchNew.aspx">馆藏书目检索  </a></li>
-                    <li><a href="BookSearch4New.aspx">新书发布 </a></li>
-                    <li><a href="PaperSearchNew.aspx">馆藏期刊检索 </a></li>
-                    <li><a href="CDSearchNew.aspx">随书光盘检索</a></li>
+                  <li><span onclick="location.href='BookSearchNew.aspx'">馆藏书目检索  </span></li>
+                    <li><span onclick="location.href='BookSearch4New.aspx'">新书发布 </span></li>
+                    <li><span onclick="location.href='PaperSearchNew.aspx'">馆藏期刊检索 </span></li>
+                    <li><span onclick="location.href='CDSearchNew.aspx'">随书光盘检索</span></li>
                     
                 </ul>
 			</li>
@@ -225,6 +208,6 @@ color:#000000;
 <div class="cl"></div>
 <script>new srcMarquee("ScrollMe",0,1,1005,27,3,1000,1000,27)</script> 
     </div>
-    </form>
+
 </body>
 </html>
