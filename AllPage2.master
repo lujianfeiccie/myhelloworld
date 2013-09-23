@@ -18,7 +18,8 @@
 <!--Js for Research-->
 <script type="text/javascript" src="JS/jquery.js" language="javascript"></script>
 <script type="text/javascript" src="JS/Functions.js"></script>
-<script type="text/javascript" src="JS/tab.js"></script>
+<!--For the index.aspx-->
+<!--<script type="text/javascript" src="JS/tab.js"></script>-->
 <style type="text/css">
 a:link,a:visited
 {
@@ -62,11 +63,11 @@ color:#000000;
      <ul>
       <li><a href="index.aspx">首页</a></li>
       <li><a href="ViewPagesNew.aspx">本馆概况</a></li>
-      <li><a href="LibZYPage.aspx">数字资源</a></li>
-      <li><a href="ViewPages.aspx?type=xz1">读书指南</a></li>
-      <li><a href="ViewPages.aspx?type=lc">服务指南</a></li> 
-      <li><a href="notelist.aspx?type=mail">馆长信箱</a></li>
-      <li><a href="MapNavigation.aspx">本站地图</a></li>
+      <li><a href="LibZYPageNew.aspx">数字资源</a></li>
+      <li><a href="ViewPagesNew.aspx?type=xz1">读书指南</a></li>
+      <li><a href="ViewPagesNew.aspx?type=lc">服务指南</a></li> 
+      <li><a href="notelistNew.aspx?type=mail">馆长信箱</a></li>
+      <li><a href="MapNavigationNew.aspx">本站地图</a></li>
       <li><a href="index.aspx">学校首页</a></li>
       
      </ul>
@@ -86,8 +87,8 @@ color:#000000;
                 <ul>
                     <li><a href="http://27.120.80.224/EasyMadl/uaspx_madl/Search_Common.aspx?sid=1&dcode=EBOOK002" >本校教程</a></li>
                        <li><a href="http://27.120.80.224/EasyMadl/uaspx_madl/Search_Common.aspx?sid=1&dcode=JNART13202" >本校论文</a></li>
-                    <li><a href="BookSearch2.aspx?type=yj">教学研究资料</a></li>
-                    <li><a href="BookSearch2.aspx?type=xs">科研学术动态</a></li>
+                    <li><a href="BookSearch2New.aspx?type=yj">教学研究资料</a></li>
+                    <li><a href="BookSearch2New.aspx?type=xs">科研学术动态</a></li>
                     <li><a href="http://27.120.80.224/EasyMadl/uaspx_madl/Search_Common.aspx?sid=1&dcode=JNART13201">军械士官</a></li>
                 </ul>
 			</li>
@@ -150,10 +151,10 @@ color:#000000;
 
             <li class="dropdown">
                 <ul>
-                  <li><a href="BookSearch.aspx">馆藏书目检索  </a></li>
-                    <li><a href="BookSearch4.aspx">新书发布 </a></li>
-                    <li><a href="PaperSearch.aspx">馆藏期刊检索 </a></li>
-                    <li><a href="CDSearch.aspx">随书光盘检索</a></li>
+                  <li><a href="BookSearchNew.aspx">馆藏书目检索  </a></li>
+                    <li><a href="BookSearch4New.aspx">新书发布 </a></li>
+                    <li><a href="PaperSearchNew.aspx">馆藏期刊检索 </a></li>
+                    <li><a href="CDSearchNew.aspx">随书光盘检索</a></li>
                     
                 </ul>
 			</li>

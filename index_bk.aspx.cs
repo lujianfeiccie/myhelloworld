@@ -10,7 +10,7 @@ using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 using System.Data.SqlClient;
 
-public partial class index2 : System.Web.UI.Page
+public partial class index : System.Web.UI.Page
 {
     public Functions myfun = new Functions();
     protected void Page_Load(object sender, EventArgs e)
@@ -22,26 +22,26 @@ public partial class index2 : System.Web.UI.Page
 
         News mynews = new News();
         mynews.NewsDataOpen();
-        //  reader = mynews.GetNewsList(1, "orderlist desc,pub_time desc", "notice", "istop=1 and ischeck=1");//置顶通知
-        // top2notice.DataSource = reader;
-        // top2notice.DataBind();
-        //  reader.Close();
+      //  reader = mynews.GetNewsList(1, "orderlist desc,pub_time desc", "notice", "istop=1 and ischeck=1");//置顶通知
+       // top2notice.DataSource = reader;
+       // top2notice.DataBind();
+      //  reader.Close();
         //首页公告
-        //   reader = mynews.GetNewsList(5, "orderlist desc,pub_time desc", "notice", "istop=0 and ischeck=1");
-        //  this.indexnotice.DataSource = reader;
-        //  indexnotice.DataBind();
-        //  reader.Close();
+     //   reader = mynews.GetNewsList(5, "orderlist desc,pub_time desc", "notice", "istop=0 and ischeck=1");
+      //  this.indexnotice.DataSource = reader;
+      //  indexnotice.DataBind();
+      //  reader.Close();
         //置顶新闻
         reader = mynews.GetNewsList(6, "orderlist desc,pub_time desc", "news", "istop=0 and ischeck=1");
         top2news.DataSource = reader;
         top2news.DataBind();
         reader.Close();
         //首页新闻
-        //  reader = mynews.GetNewsList(5, "orderlist desc,pub_time desc", "news", "istop=0 and ischeck=1");
-        //  indexnews.DataSource = reader;
-        //  indexnews.DataBind();
-        //  reader.Close();
-        //  mynews.NewsDataClose();
+      //  reader = mynews.GetNewsList(5, "orderlist desc,pub_time desc", "news", "istop=0 and ischeck=1");
+      //  indexnews.DataSource = reader;
+      //  indexnews.DataBind();
+      //  reader.Close();
+      //  mynews.NewsDataClose();
         //新书推荐
         Book mybook = new Book();
         mybook.BookDataOpen();
@@ -50,7 +50,7 @@ public partial class index2 : System.Web.UI.Page
         newbook.DataBind();
         reader.Close();
         mybook.BookDataClose();
-
+        
     }
     public string IsNew(string pub_date)
     {
