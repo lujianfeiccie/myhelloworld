@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/AllPage.master" AutoEventWireup="true" CodeFile="DefaultTest.aspx.cs"
+﻿<%@ Page Language="C#" MasterPageFile="~/AllPage2.master" AutoEventWireup="true" CodeFile="DefaultTest.aspx.cs"
     Inherits="DefaultTest" Title="Untitled Page" %>
 <%@ OutputCache Duration="1" VaryByParam="none"  %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
@@ -20,4 +20,5 @@
             </ul>
         </div>
     </div>
+    <button onclick="var user_id = '';getfunc(<%=Session["userid"] %>+'','1');">click me</button>
 </asp:Content>

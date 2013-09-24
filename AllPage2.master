@@ -68,11 +68,11 @@
 
             <li class="dropdown">
                 <ul>
-                    <li><span onclick="location.href='http://27.120.80.224/EasyMadl/uaspx_madl/Search_Common.aspx?sid=1&dcode=EBOOK002';addCount(<%=Session["userid"] %>,'2');">本校教材</span></li>
-                       <li><span onclick="location.href='http://27.120.80.224/EasyMadl/uaspx_madl/Search_Common.aspx?sid=1&dcode=JNART13202'">本校论文</span></li>
-                    <li><span onclick="location.href='BookSearch2New.aspx?type=yj'">教学研究资料</span></li>
-                    <li><span onclick="location.href='BookSearch2New.aspx?type=xs'">科研学术动态</span></li>
-                    <li><span onclick="location.href='http://27.120.80.224/EasyMadl/uaspx_madl/Search_Common.aspx?sid=1&dcode=JNART13201'">军械士官</span></li>
+                    <li><span onclick="location.href='location.href='http://27.120.80.224/EasyMadl/uaspx_madl/Search_Common.aspx?sid=1&dcode=EBOOK002';addCount(<%=Session["userid"] %>+'','2');">本校教材</span></li>
+                    <li><span onclick="location.href='http://27.120.80.224/EasyMadl/uaspx_madl/Search_Common.aspx?sid=1&dcode=JNART13202';addCount(<%=Session["userid"] %>+'','2');">本校论文</span></li>
+                    <li><span onclick="location.href='BookSearch2New.aspx?type=yj';">教学研究资料</span></li>
+                    <li><span onclick="location.href='BookSearch2New.aspx?type=xs';">科研学术动态</span></li>
+                    <li><span onclick="location.href='http://27.120.80.224/EasyMadl/uaspx_madl/Search_Common.aspx?sid=1&dcode=JNART13201';addCount(<%=Session["userid"] %>+'','2');">军械士官</span></li>
                 </ul>
 			</li>
           </ul>
@@ -84,11 +84,11 @@
 
             <li class="dropdown">
                 <ul>
-                    <li><span onclick="location.href='http://27.120.80.230:9988/index.action'" >书生之家</span></li>
-                    <li><span onclick="location.href='http://27.120.80.224:8012/'" >博看期刊</span></li>
-                    <li><span onclick="location.href='http://27.120.80.232:8088/C/Periodical.aspx'">万方期刊</span></li>
-                    <li><span onclick="location.href='http://27.120.80.238:81/'">外文电子书库</span></li>
-                    <li><span onclick="location.href='http://27.120.80.232:90/'">中国标准全文库</span></li>
+                    <li><span onclick="location.href='http://27.120.80.230:9988/index.action';addCount(<%=Session["userid"] %>+'','2');" >书生之家</span></li>
+                    <li><span onclick="location.href='http://27.120.80.224:8012/';addCount(<%=Session["userid"] %>+'','2');" >博看期刊</span></li>
+                    <li><span onclick="location.href='http://27.120.80.232:8088/C/Periodical.aspx';addCount(<%=Session["userid"] %>+'','2');">万方期刊</span></li>
+                    <li><span onclick="location.href='http://27.120.80.238:81/';addCount(<%=Session["userid"] %>+'','2');">外文电子书库</span></li>
+                    <li><span onclick="location.href='http://27.120.80.232:90/';addCount(<%=Session["userid"] %>+'','2');">中国标准全文库</span></li>
                   
                 </ul>
 			</li>
@@ -101,11 +101,11 @@
 
             <li class="dropdown">
                 <ul>
-                    <li><span onclick="location.href='http://www.nm2.lib.kjld.mtn/easymadl/uaspx_madl/Search_Common.aspx?sid=1&dcode=JNART'">军事期刊库</span></li>
-                    <li><span onclick="location.href='http://27.120.80.238:8088/'" >军事图书库</span></li>
-                    <li><span onclick="location.href='http://27.120.80.238:8088/'">军校外文资源服务系统</span></li>
-                    <li><span onclick="location.href='http://27.120.80.238/chineseebook'">中文通用数字图书馆</span></li>
-                    <li><span onclick="location.href='http://27.120.80.77:8880/'">internet信息资源集成系统.</span></li>
+                    <li><span onclick="location.href='http://www.nm2.lib.kjld.mtn/easymadl/uaspx_madl/Search_Common.aspx?sid=1&dcode=JNART';addCount(<%=Session["userid"] %>+'','2');">军事期刊库</span></li>
+                    <li><span onclick="location.href='http://27.120.80.238:8088/';addCount(<%=Session["userid"] %>+'','2');" >军事图书库</span></li>
+                    <li><span onclick="location.href='http://27.120.80.238:8088/';addCount(<%=Session["userid"] %>+'','2');">军校外文资源服务系统</span></li>
+                    <li><span onclick="location.href='http://27.120.80.238/chineseebook';addCount(<%=Session["userid"] %>+'','2');">中文通用数字图书馆</span></li>
+                    <li><span onclick="location.href='http://27.120.80.77:8880/';addCount(<%=Session["userid"] %>+'','2');">internet信息资源集成系统.</span></li>
                 </ul>
 			</li>
           </ul>

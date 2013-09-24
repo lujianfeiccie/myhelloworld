@@ -9,6 +9,18 @@ function addCount(user_id,page_id)
       {// code for IE6, IE5
       xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
       }
+ 
+      if(user_id==null){
+         return;
+      }
+      if(user_id == ""){
+         return;
+      }
     xmlhttp.open("GET","statistic.ashx?user_id='"+user_id+"'&page_id='"+page_id+"'&t=" + Math.random(),false);
     xmlhttp.send();
+}
+
+function getfunc(){
+  var numargs   =   arguments.length; 
+  alert(numargs);
 }
