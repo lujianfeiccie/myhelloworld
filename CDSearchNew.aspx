@@ -4,7 +4,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
       <script language="javascript" type="text/javascript" src="js/my.js"></script>
     <script type="text/javascript" src="js/dojo.js"></script> 
-
+<form runat="server">
     <div style="font-size:15px; background-color:#efefef; height:30px; padding-top:10px; padding-left:20px; font-weight:bold;">随书光盘检索<asp:Label ID="Label1" runat="server" Text=""></asp:Label></div>
 
     <div class="feature" style="padding-left:20px; line-height:24px; margin:12px 0px 20px 0px; font-size:13px;">
@@ -115,6 +115,7 @@
         </cc1:MyGridView>
         </div>  
         <div id="toolTip" style="left:200px;"> </div>
-
+</form>
+<script>addCount(<%=Session["userid"] %>,'2');</script>
 </asp:Content>
 

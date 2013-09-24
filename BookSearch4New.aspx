@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/AllPage.master" AutoEventWireup="true" CodeFile="BookSearch4New.aspx.cs" Inherits="BookSearch4New" Title="Untitled Page" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/AllPage2.master" AutoEventWireup="true" CodeFile="BookSearch4New.aspx.cs" Inherits="BookSearch4New" Title="Untitled Page" %>
 <%@ Register Assembly="MyGridView" Namespace="milnets.search" TagPrefix="cc1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
@@ -113,5 +113,6 @@
         </div>  
         
         </form>   
+        <script>addCount(<%=Session["userid"] %>,'2');</script>
 </asp:Content>
 

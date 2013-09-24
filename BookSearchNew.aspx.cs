@@ -20,7 +20,7 @@ public partial class BookSearchNew : System.Web.UI.Page
     public string downlistid = "";//存储客服端id
     public string buttomid = "";
     protected void Page_Load(object sender, EventArgs e)
-    {
+    {        
         connString = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["DBString"].ConnectionString;
         //BindData();
         if (!IsPostBack)

@@ -68,8 +68,8 @@
 
             <li class="dropdown">
                 <ul>
-                    <li><span onclick="location.href='http://27.120.80.224/EasyMadl/uaspx_madl/Search_Common.aspx?sid=1&dcode=EBOOK002" >本校教程</span></li>
-                       <li><span onclick="location.href='http://27.120.80.224/EasyMadl/uaspx_madl/Search_Common.aspx?sid=1&dcode=JNART13202" >本校论文</span></li>
+                    <li><span onclick="location.href='http://27.120.80.224/EasyMadl/uaspx_madl/Search_Common.aspx?sid=1&dcode=EBOOK002';addCount(<%=Session["userid"] %>,'2');">本校教材</span></li>
+                       <li><span onclick="location.href='http://27.120.80.224/EasyMadl/uaspx_madl/Search_Common.aspx?sid=1&dcode=JNART13202'">本校论文</span></li>
                     <li><span onclick="location.href='BookSearch2New.aspx?type=yj'">教学研究资料</span></li>
                     <li><span onclick="location.href='BookSearch2New.aspx?type=xs'">科研学术动态</span></li>
                     <li><span onclick="location.href='http://27.120.80.224/EasyMadl/uaspx_madl/Search_Common.aspx?sid=1&dcode=JNART13201'">军械士官</span></li>

@@ -111,5 +111,6 @@
         </cc1:MyGridView>
         </div>  
         </form>   
+        <script>addCount(<%=Session["userid"] %>,'2');</script>
 </asp:Content>
 
