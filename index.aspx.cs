@@ -42,7 +42,7 @@ public partial class index2 : System.Web.UI.Page
         //  indexnews.DataBind();
         //  reader.Close();
         //  mynews.NewsDataClose();
-        //新书推荐
+        //新书通报
         Book mybook = new Book();
         mybook.BookDataOpen();
         reader = mybook.GetBookList(6, "addtime desc", "istop=1");
@@ -50,6 +50,15 @@ public partial class index2 : System.Web.UI.Page
         newbook.DataBind();
         reader.Close();
         mybook.BookDataClose();
+
+        //新书推荐
+        Book mybook_recommend = new Book();
+        mybook_recommend.BookDataOpen();
+        reader = mybook_recommend.GetBookList(5, "addtime desc", "istop=0");
+        newbook_recommend.DataSource = reader;
+        newbook_recommend.DataBind();
+        reader.Close();
+        mybook_recommend.BookDataClose();
 
     }
     public string IsNew(string pub_date)

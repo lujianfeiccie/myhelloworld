@@ -98,6 +98,7 @@
 </ul>
 </div>
 
+<!--全部 -->
 <div id="anothercontent1">
 <div class="xlxk">
 <select name="" >
@@ -108,46 +109,44 @@
 </div>
 <div class="cl"></div>
 </div>
-
+<!--馆藏图书-->
 <div id="anothercontent2">
 <div class="xlxk_l">
 <input name="" type="text"  value="管藏图书书籍"><span><img src="images/index_35.gif"  /></span>
 </div>
-
 </div>
-
+<!--期刊-->
 <div id="anothercontent3">
 <div class="xlxk_l">
 
 <input name="" type="text" /  value="1"><span><img src="images/index_35.gif"  /></span>
 </div>
 </div>
-
+<!--电子书 -->
 <div id="anothercontent4">
 <div class="xlxk_l">
-
-<input name="" type="text" /  value="2"><span><img src="images/index_35.gif"  /></span>
+暂无内容
+<!--<input name="" type="text" /  value="2"><span><img src="images/index_35.gif"  /></span>-->
 </div>
 
 </div>
-
+<!--视频-->
 <div id="anothercontent5">
 <div class="xlxk_l">
-
-<input name="" type="text" / value="3"><span><img src="images/index_35.gif"  /></span>
+暂无内容
+<!--<input name="" type="text" / value="3"><span><img src="images/index_35.gif"  /></span>-->
 </div>
 
 </div>
-
+<!-- 军工信息-->
 <div id="anothercontent6">
-
 <div class="xlxk_l">
 
 <input name="" type="text" /  value="4"><span><img src="images/index_35.gif"  /></span>
 </div>
 
 </div>
-
+<!--我的图书馆-->
 <div id="anothercontent7">
 <div class="xlxk_n">
     <form id="login" name="login" action="LoginNew.aspx?act=in" method="post">
@@ -175,13 +174,11 @@
    <div class="xinshu_bt"><img src="images/index_42.gif" width="580" height="24" /></div>
    <div class="xinshu_nr">
       <ul>
-        <li><img src="images/index_49.gif" width="71" height="88" /><span>书名</span></li>
-        <li><img src="images/index_49.gif" width="71" height="88" /><span>书名</span></li>
-        <li><img src="images/index_49.gif" width="71" height="88" /><span>书名</span></li>
-        <li><img src="images/index_49.gif" width="71" height="88" /><span>书名</span></li>
-        <li><img src="images/index_49.gif" width="71" height="88" /><span>书名</span></li>
-        
-      
+         <asp:Repeater ID="newbook_recommend" runat="server">
+           <ItemTemplate>
+            <li><img src="<%# DataBinder.Eval(Container.DataItem,"picurl").ToString()%>" width="71" height="88" /><span><%# DataBinder.Eval(Container.DataItem,"title")%></span></li>         
+         </ItemTemplate>
+        </asp:Repeater>
       </ul>
    
    </div>
