@@ -554,6 +554,7 @@ public SqlDataReader GetMyHistory(DateTime datetime1,DateTime datetime2,int page
        }
       catch { return null; }
     }
+   
     public SqlDataReader GetMyHistory(DateTime datetime1,DateTime datetime2)
     {
         sql = "select [bib]._题名,[l_loanlog]._图书条码,[l_loanlog]._日期,[bib].recid,[bib]._分类 from [bib],[l_loanlog],[l_codebar] where [l_loanlog]._图书条码=[l_codebar]._图书条码  and [l_codebar].recid=[bib].recid and [l_loanlog]._读者条码=@UserID and ([l_loanlog]._日期 between @DateTime1 and @DateTime2) order by [l_loanlog]._日期 desc";

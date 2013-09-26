@@ -1,6 +1,7 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/AllPage2.master" AutoEventWireup="true" CodeFile="Statistic.aspx.cs" Inherits="Statistic" Title="Untitled Page" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-<script src="Calendar/WdatePicker.js"></script>
+<script src="Calendar/WdatePicker.js" type="text/javascript"></script>
+
 <style type="text/css">  
            table {  
             border: 1px solid #B1CDE3;  
@@ -56,9 +57,9 @@
 		  font-size:20px;  
 		  width:690px;
 		}
-</style> 
+</style>
 
-
+<form id="form1" runat="server">
 <table border="1">
 <tr>
 <th class="header" colspan= "3">访问使用统计</th>
@@ -70,13 +71,13 @@
 </tr>
 <tr>
   <td>纸质图书借阅</td>
-  <td>123</td>
-  <td>123</td>
+  <td><asp:Label ID="month_paper" runat="server"/></td>
+  <td><asp:Label ID="total_paper" runat="server"/></td>
 </tr>
 <tr>
   <td>数字资源月点击率</td>
-  <td>123</td>
-  <td>123</td>
+  <td><asp:Label ID="month_digital" runat="server"/></td>
+  <td><asp:Label ID="total_digital" runat="server"/></td>
 </tr>
 </table>
 
@@ -87,13 +88,13 @@
 </th>
 </tr>
 <tr>
-<td>开始:<input type="text" value="" onClick="WdatePicker()"/></td> <td>结束:<input type="text" value="" onClick="WdatePicker()"> &nbsp;<button>查询</button></td>
+<td>开始:<input id="txt_starttime" type="text" value="" onclick="WdatePicker()" runat="server"/></td> <td>结束:<input id="txt_endtime" type="text" value="" onclick="WdatePicker()" runat="server"/> &nbsp;<asp:Button ID="btn_Search" runat="server" Text="查询" OnClick="btn_Search_Click" /></td>
 </tr>
 </table>
 
-<table border="1" class="table2">
+<table id="table2" border="1" class="table2" runat="server" visible="false">
 <tr>
-<th class="header" colspan= "2">查询结果 (2013-5-26 至 2013-5-28)</th>
+<th class="header" colspan= "2">查询结果 (<asp:Label ID="lbl_starttime" runat="server"/> 至 <asp:Label ID="lbl_endtime" runat="server"/>)</th>
 </tr>
 <tr>
   <th>栏目</th>
@@ -101,12 +102,13 @@
 </tr>
 <tr>
   <td>纸质图书借阅</td>
-  <td>123</td>
+  <td><asp:Label ID="paper_search" runat="server"/></td>
 </tr>
 <tr>
   <td>数字资源月点击率</td>
-  <td>123</td>
+  <td><asp:Label ID="digitial_search" runat="server"/></td>
 </tr>
 </table>
+</form>
 </asp:Content>
 

@@ -17,4 +17,5 @@ public class TimeHelper
 	{
         return DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
 	}
+    
 }
