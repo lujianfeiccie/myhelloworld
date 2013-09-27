@@ -12,7 +12,7 @@
 </div>
 
 <div id="tabcontent1">
-<div class="nimag"><img src="images/index_22.gif" width="188" height="145" alt=""/></div>
+<!--<div class="nimag"><img src="images/index_22.gif" width="188" height="145" alt=""/></div>-->
 <div class="news_n">
 <ul class="mynews">
     <asp:Repeater ID="top2news" runat="server">
@@ -46,26 +46,28 @@
 </div>
 
 <div id="tabcontent2">
-<div class="nimag"><img src="images/index_22.gif" width="188" height="145" /></div>
 <div class="news_n">
-<ul>
-    <li>gdf方评估<span>2012-12-12</span></li>
-    <li>252452452452<span>2012-12-12</span></li>
-    <li>45<span>2012-12-12</span></li>
-    <li>李克强邀院士谈城镇化 政策落实将第三方评估<span>2012-12-12</span></li>
-    <li>李克强邀院士谈城镇化 政策落实将第三方评估<span>2012-12-12</span></li>
-    <li>李克强邀院士谈城镇化 政策落实将第三方评估<span>2012-12-12</span></li>
-    <div class="cl"></div>
-    
-</ul>
-
+ <div>馆藏资源</div>
+  <div><a href="BookSearchNew.aspx" target="_blank">馆藏书目检索 </a><a href="BookSearch4New.aspx" target="_blank">新书发布 </a><a href="PaperSearchNew.aspx" target="_blank">馆藏期刊检索</a> <a href="CDSearchNew.aspx" target="_blank">随书光盘检索 </a></div>
+</div>
+<div>
+  <div>特色资源</div>
+  <div><a href="http://27.120.80.224/EasyMadl/uaspx_madl/Search_Common.aspx?sid=1&amp;dcode=EBOOK002" target="_blank">本校教材 </a><a href="http://27.120.80.224/EasyMadl/uaspx_madl/Search_Common.aspx?sid=1&amp;dcode=JNART13202" target="_blank">本校论文 </a><a href="BookSearch2New.aspx?type=yj" target="_blank">教学研究资料 </a><a href="BookSearch2New.aspx?type=xs" target="_blank">科研学术动态 </a><a href="http://27.120.80.224/EasyMadl/uaspx_madl/Search_Common.aspx?sid=1&amp;dcode=JNART13201" target="_blank">军械士官 </a><a href="http://27.120.80.232/LibZYPage.aspx?type=ts" target="_blank">更多...</a></div>
+</div>
+<div>
+  <div>军事电子资源</div>
+  <div><a href="http://www.nm2.lib.kjld.mtn/easymadl/uaspx_madl/Search_Common.aspx?sid=1&amp;dcode=JNART" target="_blank">军事期刊库 </a><a href="http://27.120.80.224/EasyMadl/uaspx_madl/Search_Book.aspx?sid=1&amp;dcode=EBOOK" target="_blank">军事图书库 </a><a href="http://27.120.80.238:8088" target="_blank">军校外文资源服务系统 </a><a href="http://27.120.80.238/chineseebook" target="_blank">中文通用数字图书馆 </a><a href="http://27.120.80.77:8880/" target="_blank">因特网信息资源重组集成服务系统</a> <a href="http://27.120.80.232/LibZYPage.aspx?type=js" target="_blank">更多... </a></div>
+</div>
+<div>
+  <div>公共资源</div>
+  <div><a href="http://27.120.80.230:9988/index.action" target="_blank">书生之家 </a><a href="http://27.120.80.224:8012" target="_blank">博看期刊 </a><a href="http://27.120.80.232:8088/C/Periodical.aspx" target="_blank">万方期刊</a> <a href="http://27.120.80.238:81" target="_blank">外文电子书库 </a><a href="http://27.120.80.232:90/" target="_blank">中国标准全文库</a> <a href="http://27.120.80.232/LibZYPage.aspx?type=gg" target="_blank">更多... </a></div>
 </div>
 
 
 </div>
 
 <div id="tabcontent3">
-<div class="nimag"><img src="images/index_22.gif" width="188" height="145" /></div>
+<!--<div class="nimag"><img src="images/index_22.gif" width="188" height="145" /></div>-->
 <div class="news_n">
 <ul class="mynews">
     <asp:Repeater ID="newbook" runat="server">
@@ -204,7 +206,9 @@
       <ul>
          <asp:Repeater ID="newbook_recommend" runat="server">
            <ItemTemplate>
-            <li><img src="<%# DataBinder.Eval(Container.DataItem,"picurl").ToString()%>" width="71" height="88" /><span><%# DataBinder.Eval(Container.DataItem,"title")%></span></li>         
+            <li onclick="location.href='BookViewNew.aspx?id='+<%# DataBinder.Eval(Container.DataItem,"id")%>">
+            <img src="/lib<%# DataBinder.Eval(Container.DataItem,"picurl").ToString()%>" width="71" height="88" />
+            <span><%# DataBinder.Eval(Container.DataItem,"title")%></span></li>         
          </ItemTemplate>
         </asp:Repeater>
       </ul>
