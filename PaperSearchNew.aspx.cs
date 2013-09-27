@@ -20,6 +20,18 @@ public partial class PaperSearchNew : System.Web.UI.Page
         connString = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["DBString"].ConnectionString;
         //BindData();
         //checkMyBookList();
+
+        string keyword = "" + Request["keyword"];
+        if (keyword == null)
+        {
+            return;
+        }
+        if (keyword.Equals(""))
+        {
+            return;
+        }
+        TextBox1.Text = keyword.Trim();
+        BindData();
     }
 
     //点击检索按钮

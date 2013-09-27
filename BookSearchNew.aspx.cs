@@ -33,6 +33,19 @@ public partial class BookSearchNew : System.Web.UI.Page
         downlistid = DropDownList1.ClientID.ToString();//请选择检索方式
         buttomid = Button1.ClientID.ToString();//检索按钮
         GetTopSearch();
+
+
+        string keyword = ""+Request["keyword"];
+        if (keyword == null)
+        {
+            return;
+        }
+        if (keyword.Equals(""))
+        {
+            return;
+        }
+        TextBox1.Text = keyword;
+        Button1_Click(null,null);
     }
 
     private void GetTopSearch()

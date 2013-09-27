@@ -101,25 +101,43 @@
 <!--全部 -->
 <div id="anothercontent1">
 <div class="xlxk">
+暂无内容<!--
 <select name="" >
   <option value="0">科技</option>
   <option value="1">人文</option>
 </select>
 <input name="" type="text"  value="--请输入关键字--"><span><img src="images/index_35.gif"  /></span>
+-->
 </div>
 <div class="cl"></div>
 </div>
 <!--馆藏图书-->
 <div id="anothercontent2">
 <div class="xlxk_l">
-<input name="" type="text"  value="管藏图书书籍"><span><img src="images/index_35.gif"  /></span>
+<input id="anothercontent2_value" name="" type="text"  value="请输入关键字" 
+    onfocus="if(this.value=='请输入关键字')
+            {
+             this.value=''
+            }"
+   onblur="if(this.value=='')
+            {
+                this.value='请输入关键字'
+            }"><span onclick="location.href='BookSearchNew.aspx?keyword='+getElementById('anothercontent2_value').value"><img src="images/index_35.gif"  /></span>
 </div>
 </div>
 <!--期刊-->
 <div id="anothercontent3">
 <div class="xlxk_l">
 
-<input name="" type="text" /  value="1"><span><img src="images/index_35.gif"  /></span>
+<input id="anothercontent3_value" name="" type="text"  value="请输入关键字" 
+    onfocus="if(this.value=='请输入关键字')
+            {
+             this.value=''
+            }"
+   onblur="if(this.value=='')
+            {
+                this.value='请输入关键字'
+            }"><span onclick="location.href='PaperSearchNew.aspx?keyword='+getElementById('anothercontent3_value').value"><img src="images/index_35.gif"  /></span>
 </div>
 </div>
 <!--电子书 -->
@@ -141,8 +159,10 @@
 <!-- 军工信息-->
 <div id="anothercontent6">
 <div class="xlxk_l">
-
+暂无内容
+<!--
 <input name="" type="text" /  value="4"><span><img src="images/index_35.gif"  /></span>
+-->
 </div>
 
 </div>
@@ -160,7 +180,15 @@
     <%}
       else
       { %>
-    <input id="username" name="username" type="text" /  value="">
+    <input id="username" name="username" type="text" /  value="请输入用户名" 
+    onfocus="if(this.value=='请输入用户名')
+            {
+             this.value=''
+            }"
+   onblur="if(this.value=='')
+                {
+                    this.value='请输入用户名'
+                }">
     <input id="password" name="password" type="password" /  value="">
     <span onclick="javascript:login.submit();"><img src="images/denglu.gif"  /></span>
      <%} %>
