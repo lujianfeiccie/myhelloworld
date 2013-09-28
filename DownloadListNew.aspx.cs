@@ -22,7 +22,9 @@ public partial class DownloadListNew : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         if (Request.QueryString["type"] != null && Request.QueryString["type"] != "")
-        { type = Request.QueryString["type"].ToString(); }
+        { 
+            type = Request.QueryString["type"].ToString();
+        }
         switch (type)
         { 
             case"download":
@@ -55,6 +57,8 @@ public partial class DownloadListNew : System.Web.UI.Page
                 mypage.NowPage = nowpage;
                 mypage.AllPage = allpage;
                 mydown.DownloadDataClose();
+
+               
                 break;
             case"wt":
                 wt = "class=\"content_left_guid_item_on\"";

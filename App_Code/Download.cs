@@ -355,7 +355,7 @@ public class Download
     }
     public SqlDataReader GetTopDownload(int viewnum)
     {
-        sql = "select top "+viewnum+" id,title,down_num from [lib_download] order by down_num desc";
+        sql = string.Format("SELECT top {0} ROW_NUMBER() OVER (ORDER BY down_num DESC) AS rownum,id,title,down_num FROM [lib_download] ORDER BY down_num DESC",viewnum);
         try
         {
             return dataconnection.GetDataReader(sql);
