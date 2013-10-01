@@ -279,6 +279,80 @@ public class LibWeb
         catch { result[2] = "读取错误"; }
         return result;
     }
-    
-    
+
+    public SqlDataReader GetTypeList(string typename)
+    {
+        //读取内容
+        sql = "select * from [lib_pages] where _标识字符='" + typename + "'";
+        SqlDataReader reader = null;
+        //_所属类别
+        string temptype = "";
+        try
+        {
+            reader = dataconnection.GetDataReader(sql);
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    temptype = reader["_所属类别"].ToString();
+                }
+            }
+            else
+            {
+                /* result[0] = "暂无记录";
+                 result[1] = "暂无记录";
+                 result[3] = "";*/
+            }
+            reader.Close();
+        }
+        catch
+        {
+            /*result[0] = "读取错误";
+            result[1] = "读取错误";
+            result[3] = "读取错误";*/
+        }
+        //读取列表
+        sql = "select _页面名称,_标识字符,_详细介绍 from [lib_pages] where _所属类别='" + temptype + "'";
+        try
+        {
+            reader = dataconnection.GetDataReader(sql);
+            return reader;
+        }
+        catch
+        {
+        }
+        return reader;
+    }
+    public Model_LibWeb GetContent(string typename)
+    {
+        Model_LibWeb mModel_LibWeb = new Model_LibWeb();
+        //读取内容
+        sql = "select * from [lib_pages] where _标识字符='" + typename + "'";
+        SqlDataReader reader = null;
+      
+
+        try
+        {
+            reader = dataconnection.GetDataReader(sql);
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    mModel_LibWeb.Title = reader["_页面名称"].ToString();
+                    mModel_LibWeb.Type = reader["_所属类别"].ToString();
+                    mModel_LibWeb.Content = reader["_详细介绍"].ToString();
+                }
+            }
+             
+            reader.Close();
+        }
+        catch
+        {
+            /*result[0] = "读取错误";
+            result[1] = "读取错误";
+            result[3] = "读取错误";*/
+        }
+
+        return mModel_LibWeb;
+    }
 }

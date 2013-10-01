@@ -35,7 +35,8 @@ public partial class LoginNew : System.Web.UI.Page
             }
             else 
             {
-                Response.Redirect("index.aspx"); 
+                //Response.Redirect("index.aspx"); 
+                Response.Write("<script>alert('用户或密码错误！');location.href='index.aspx';</script>");
             }
             myuser.UserDataClose();
 
