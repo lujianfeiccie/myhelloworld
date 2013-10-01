@@ -2,8 +2,9 @@
 <head>
 <title></title>
 <script src="Calendar/WdatePicker.js"></script>
+
 <style type="text/css">  
-        table {  
+           table {  
             border: 1px solid #B1CDE3;  
             background: #fff;    
             padding:0;   
@@ -14,7 +15,7 @@
         th {
 			font-size:20px;  
 			text-align:center;
-			 border: 1px solid #B1CDE3;  
+				 border: 1px solid #B1CDE3;  
 		}
 		.header{
 			 background: #246cd2; 
@@ -30,6 +31,9 @@
 			width:200px;
 			
         } 
+		td.search{
+		    text-align:left;
+		}
 		.divclass{
 			width:620px;
 			text-align:center;
@@ -57,13 +61,12 @@
 		  font-size:20px;  
 		  width:690px;
 		}
-</style>  
+</style>
+
 </head>
 <body>
 
-
-
-
+<form id="form1" runat="server">
 <table border="1">
 <tr>
 <th class="header" colspan= "3">访问使用统计</th>
@@ -75,30 +78,70 @@
 </tr>
 <tr>
   <td>纸质图书借阅</td>
-  <td>123</td>
-  <td>123</td>
+  <td><asp:Label ID="month_paper" runat="server"/></td>
+  <td><asp:Label ID="total_paper" runat="server"/></td>
 </tr>
 <tr>
-  <td>数字资源月点击率</td>
-  <td>123</td>
-  <td>123</td>
+  <td>本校教材</td>
+  <td><asp:Label ID="month1_digital" runat="server"/></td>
+  <td><asp:Label ID="total1_digital" runat="server"/></td>
+</tr>
+<tr>
+  <td>本校论文</td>
+  <td><asp:Label ID="month2_digital" runat="server"/></td>
+  <td><asp:Label ID="total2_digital" runat="server"/></td>
+</tr>
+<tr>
+  <td>教学研究资料</td>
+  <td><asp:Label ID="month3_digital" runat="server"/></td>
+  <td><asp:Label ID="total3_digital" runat="server"/></td>
+</tr>
+<tr>
+  <td>科研学术动态</td>
+  <td><asp:Label ID="month4_digital" runat="server"/></td>
+  <td><asp:Label ID="total4_digital" runat="server"/></td>
+</tr>
+<tr>
+  <td>军械士官</td>
+  <td><asp:Label ID="month5_digital" runat="server"/></td>
+  <td><asp:Label ID="total5_digital" runat="server"/></td>
+</tr>
+<tr>
+  <td>教学参考书全文库</td>
+  <td><asp:Label ID="month6_digital" runat="server"/></td>
+  <td><asp:Label ID="total6_digital" runat="server"/></td>
+</tr>
+<tr>
+  <td>维修技术信息资料汇编</td>
+  <td><asp:Label ID="month7_digital" runat="server"/></td>
+  <td><asp:Label ID="total7_digital" runat="server"/></td>
+</tr>
+<tr>
+  <td>学科学会论文集库</td>
+  <td><asp:Label ID="month8_digital" runat="server"/></td>
+  <td><asp:Label ID="total8_digital" runat="server"/></td>
 </tr>
 </table>
 
 <table class="table2">
 <tr>
-<th colspan="2" class="header">
-按时间段查询
+<th class="header">
+按条件查询
 </th>
 </tr>
 <tr>
-<td>开始:<input type="text" value="" onClick="WdatePicker()"/></td> <td>结束:<input type="text" value="" onClick="WdatePicker()"> &nbsp;<button>查询</button></td>
+<td class ="search">
+卡号:<input id="txt_cardno" type="text" value="" runat="server" /><br>
+开始:<input id="txt_starttime" type="text" value="" onclick="WdatePicker()" runat="server"/>
+结束:<input id="txt_endtime" type="text" value="" onclick="WdatePicker()" runat="server"/> 
+<input id="btn_Search" type="button" runat="server" value="查询" onserverclick="btn_Search_ServerClick" />
+</td>
 </tr>
 </table>
 
-<table border="1" class="table2">
+<table id="table2" border="1" class="table2" runat="server" visible="false">
 <tr>
-<th class="header" colspan= "2">查询结果 (2013-5-26 至 2013-5-28)</th>
+<th class="header" colspan= "2">查询结果 (<asp:Label ID="lbl_starttime" runat="server"/> 至 <asp:Label ID="lbl_endtime" runat="server"/>)</th>
 </tr>
 <tr>
   <th>栏目</th>
@@ -106,12 +149,41 @@
 </tr>
 <tr>
   <td>纸质图书借阅</td>
-  <td>123</td>
+  <td><asp:Label ID="paper_search" runat="server"/></td>
 </tr>
 <tr>
-  <td>数字资源月点击率</td>
-  <td>123</td>
+  <td>本校教材</td>
+  <td><asp:Label ID="digital1_search" runat="server"/></td>
+</tr>
+<tr>
+  <td>本校论文</td>
+  <td><asp:Label ID="digital2_search" runat="server"/></td>
+</tr>
+<tr>
+  <td>教学研究资料</td>
+  <td><asp:Label ID="digital3_search" runat="server"/></td>
+</tr>
+<tr>
+  <td>科研学术动态</td>
+  <td><asp:Label ID="digital4_search" runat="server"/></td>
+</tr>
+<tr>
+  <td>军械士官</td>
+  <td><asp:Label ID="digital5_search" runat="server"/></td>
+</tr>
+<tr>
+  <td>教学参考书全文库</td>
+  <td><asp:Label ID="digital6_search" runat="server"/></td>
+</tr>
+<tr>
+  <td>维修技术信息资料汇编</td>
+  <td><asp:Label ID="digital7_search" runat="server"/></td>
+</tr>
+<tr>
+  <td>学科学会论文集库</td>
+  <td><asp:Label ID="digital8_search" runat="server"/></td>
 </tr>
 </table>
+</form>
 </body>
 </html>

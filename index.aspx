@@ -225,7 +225,7 @@
     <li><a href="BookListNew.aspx" >新书荐购</a></li>
     <li>新书订阅</li>
     <li><a href="CDSearchNew.aspx">随书光盘</a></li>
-    <li><a href="">统计分析</a></li>
+    <li><a href="Statistic.aspx">统计分析</a></li>
     <li><a href="">数字教育</a></li>
     <li><a href="DownloadListNew.aspx?type=download">软件下载</a></li>
 

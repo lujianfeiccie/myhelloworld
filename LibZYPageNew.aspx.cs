@@ -25,7 +25,7 @@ public partial class LibZYPageNew : System.Web.UI.Page
         {
            type = Request.QueryString["type"].ToString();
         }
-            string typename = "本校特色资源";
+           /* string typename = "本校特色资源";
             switch (type)
             {
                 
@@ -60,8 +60,7 @@ public partial class LibZYPageNew : System.Web.UI.Page
             link_list_all.DataSource = reader;
             link_list_all.DataBind();
             reader.Close();
-            myweb.WebDataClose();
-
+            myweb.WebDataClose();  */
 
         
     }

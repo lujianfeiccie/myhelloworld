@@ -5,113 +5,92 @@
     <meta http-equiv="content-type" content="text/html;charset=gb2312">
     <!--把下面代码加到<head>与</head>之间-->
     <style type="text/css">
-        *
+        * /*所有样式*/
         {
-            font-family: simsun;
-            margin: 0px;
+            font-family: simsun; /*宋体*/
+            margin: 0px; /*上下左右居中*/
             padding: 0px;
+			background:#fff;
         }
-        body
+        body /*body样式*/
         {
             font-size: 12px;
             text-align: center;
         }
-        ul, li
+        ul, li /*所有<ul><li>样式*/
         {
-            list-style: none;
+            list-style: none; /*无左侧圆点*/
+        }    
+		a /*所有<a></a>样式*/
+		{ 
+		text-decoration:none; /*无下划线*/
+		}        
+         
+        .box2 /*外层div*/
+        {
+            border: 1px solid #ADDFF2; /*边框及颜色*/
+            text-align: left;          /*整体左对齐*/
+            overflow: hidden;		   /*内容溢出部分隐藏*/
+			height: 260px; /*最外层div高度*/
+     	    margin-bottom: 7px;
+        }         
+        .box2 h2 /*标题栏*/
+        {
+            background: #EEF7FE;       /*背景色*/
+            height: 21px;			   /*高度*/
+            line-height: 21px;         /*文字行高*/
+            overflow-y: hidden;		   /*超出对象高度的部分隐藏*/
+            border-bottom: 1px solid #ADDFF2; /*底部边框的颜色及填充色彩*/
+            color: #1974C8;	           /*文字颜色*/
+            font-size: 12px;		   /*文字大小*/
+            padding: 0px 8px;		   /*上下边距为0px  左右边距为8px*/
         }
-        a
+        .box2 h2 a.more /*<a>更多</a>样式*/
         {
-            text-decoration: none;
-            color: #3381BF;
+            float: right;			     /*内容向右浮动，在右侧显示*/	
+            text-decoration: underline;  /*带下划线*/
+            background: url() no-repeat; /*透明背景*/
+            padding-right: 8px;			 /*内距8px*/	
+            font-weight: normal;         /*文字普通大小*/
         }
-        a:hover
+        .box2 .inner /*内层div*/
         {
-            text-decoration: underline;
-        }
-        #movie_rank
-        {
-            height: 260px;
-        }
-        .box2
-        {
-            border: 1px solid #ADDFF2;
-            text-align: left;
+            padding: 8px;       /*上下左右边距8px*/
             overflow: hidden;
-            color: #9C9C9C;
-            text-align: left;
         }
-        .box2
+        .box2 a	/*超链接样式*/				
         {
-            margin-bottom: 7px;
+            color: #3083C7;      /*内容颜色*/
+            white-space: nowrap; /*文本不进行换行*/
         }
-        .box2 h2
+        .rank_list	/*列表样式*/			
         {
-            background: #EEF7FE;
-            height: 21px;
-            line-height: 21px;
-            overflow-y: hidden;
-            border-bottom: 1px solid #ADDFF2;
-            color: #1974C8;
-            font-size: 12px;
-            padding: 0px 8px;
+            line-height: 14px;  /*列表的行高*/
+            padding-top: 5px;   /*顶内边距*/
         }
-        .box2 h2 a.more
+        .rank_list li /*列表项样式*/
         {
-            float: right;
-            text-decoration: underline;
-            background: url() no-repeat 100% -123px;
-            padding-right: 8px;
-            font-weight: normal;
-        }
-        .box2 h2 span
-        {
-            margin-left: 5px;
-            font-weight: normal;
-            color: #B9B7B8;
-        }
-        .box2 .inner
-        {
-            padding: 8px;
-            line-height: 18px;
+            height: 14px;        /*高度*/
+            margin-bottom: 8px;  /*底部的边距*/
+            padding-left: 20px;  /*左内边距*/
+            white-space: nowrap; 
             overflow: hidden;
-            color: #3083C7;
+            position: relative; /*对象不可层叠,参照父级（最近）的内容区的左上角为原始点*/
         }
-        .box2 a
+        .rank_list li.top3 em /*前三名排名样式*/
         {
-            color: #3083C7;
-            white-space: nowrap;
+            background: #FFE4B7;      /*前三名em的背景颜色*/
+            border: 1px solid #FFBB8B;/*前三名em的边框颜色*/
+            color: #FF6800;			  /*前三名em的文字颜色*/
         }
-        .rank_list
+        .rank_list em /*普通排名样式*/
         {
-            line-height: 14px;
-            margin: auto;
-            padding-top: 5px;
-        }
-        .rank_list li
-        {
-            height: 14px;
-            margin-bottom: 8px;
-            width: 290px;
-            padding-left: 20px;
-            white-space: nowrap;
-            overflow: hidden;
-            position: relative;
-        }
-        .rank_list li.top3 em
-        {
-            background: #FFE4B7;
-            border: 1px solid #FFBB8B;
-            color: #FF6800;
-        }
-        .rank_list em
-        {
-            position: absolute;
-            left: 0;
+            position: absolute;     /*以<li>左上角为原始点进行定位*/    
+            left: 0;				/*<li>位置(0,0)*/
             top: 0;
-            width: 12px;
+            width: 12px;			/*宽高12px*/
             height: 12px;
-            border: 1px solid #B1E0F4;
+            border: 1px solid #B1E0F4; /*边框1px 颜色#B1E0F4*/
             color: #6298CC;
             font-style: normal;
             font-size: 10px;
@@ -121,31 +100,22 @@
             line-height: 12px;
             overflow: hidden;
         }
-        .rank_list span
+        .rank_list span   /*下载量样式*/
         {
-            position: absolute;
-            width: 60px;
+            position: absolute; /*以li左上角为原点*/   
+            width: 60px;        
             color: #B7B7B7;
-            text-align: right;
-            height: 14px;
+            text-align: right;  /*右对齐*/
+            height: 14px;       
             background: #fff;
-            left: 110px;
+            left: 200px;		  /*相对li的(110,0)位置*/
         }
-        #movie_rank .rank_list span
-        {
-            position: absolute;
-            width: 40px;
-            color: #B7B7B7;
-            text-align: right;
-            height: 14px;
-            background: #fff;
-            left: 260px;
-        }
+      
     </style>
 </head>
 <body>
     <!--把下面代码加到<body>与</body>之间-->
-    <div class="box2" id="movie_rank">
+    <div class="box2">
         <h2>
             <a href="#" class="more">更多</a>源码排行</h2>
         <div class="inner">

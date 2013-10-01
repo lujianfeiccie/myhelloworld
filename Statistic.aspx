@@ -1,7 +1,6 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/AllPage2.master" AutoEventWireup="true" CodeFile="Statistic.aspx.cs" Inherits="Statistic" Title="Untitled Page" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 <script src="Calendar/WdatePicker.js" type="text/javascript"></script>
-
 <style type="text/css">  
            table {  
             border: 1px solid #B1CDE3;  
@@ -30,6 +29,9 @@
 			width:200px;
 			
         } 
+		td.search{
+		    text-align:left;
+		}
 		.divclass{
 			width:620px;
 			text-align:center;
@@ -75,20 +77,60 @@
   <td><asp:Label ID="total_paper" runat="server"/></td>
 </tr>
 <tr>
-  <td>数字资源月点击率</td>
-  <td><asp:Label ID="month_digital" runat="server"/></td>
-  <td><asp:Label ID="total_digital" runat="server"/></td>
+  <td>本校教材</td>
+  <td><asp:Label ID="month1_digital" runat="server"/></td>
+  <td><asp:Label ID="total1_digital" runat="server"/></td>
+</tr>
+<tr>
+  <td>本校论文</td>
+  <td><asp:Label ID="month2_digital" runat="server"/></td>
+  <td><asp:Label ID="total2_digital" runat="server"/></td>
+</tr>
+<tr>
+  <td>教学研究资料</td>
+  <td><asp:Label ID="month3_digital" runat="server"/></td>
+  <td><asp:Label ID="total3_digital" runat="server"/></td>
+</tr>
+<tr>
+  <td>科研学术动态</td>
+  <td><asp:Label ID="month4_digital" runat="server"/></td>
+  <td><asp:Label ID="total4_digital" runat="server"/></td>
+</tr>
+<tr>
+  <td>军械士官</td>
+  <td><asp:Label ID="month5_digital" runat="server"/></td>
+  <td><asp:Label ID="total5_digital" runat="server"/></td>
+</tr>
+<tr>
+  <td>教学参考书全文库</td>
+  <td><asp:Label ID="month6_digital" runat="server"/></td>
+  <td><asp:Label ID="total6_digital" runat="server"/></td>
+</tr>
+<tr>
+  <td>维修技术信息资料汇编</td>
+  <td><asp:Label ID="month7_digital" runat="server"/></td>
+  <td><asp:Label ID="total7_digital" runat="server"/></td>
+</tr>
+<tr>
+  <td>学科学会论文集库</td>
+  <td><asp:Label ID="month8_digital" runat="server"/></td>
+  <td><asp:Label ID="total8_digital" runat="server"/></td>
 </tr>
 </table>
 
 <table class="table2">
 <tr>
-<th colspan="2" class="header">
-按时间段查询
+<th class="header">
+按条件查询
 </th>
 </tr>
 <tr>
-<td>开始:<input id="txt_starttime" type="text" value="" onclick="WdatePicker()" runat="server"/></td> <td>结束:<input id="txt_endtime" type="text" value="" onclick="WdatePicker()" runat="server"/> &nbsp;<asp:Button ID="btn_Search" runat="server" Text="查询" OnClick="btn_Search_Click" /></td>
+<td class ="search">
+卡号:<input id="txt_cardno" type="text" value="" runat="server" /><br>
+开始:<input id="txt_starttime" type="text" value="" onclick="WdatePicker()" runat="server"/>
+结束:<input id="txt_endtime" type="text" value="" onclick="WdatePicker()" runat="server"/> 
+<input id="btn_Search" type="button" runat="server" value="查询" onserverclick="btn_Search_ServerClick" />
+</td>
 </tr>
 </table>
 
@@ -105,10 +147,39 @@
   <td><asp:Label ID="paper_search" runat="server"/></td>
 </tr>
 <tr>
-  <td>数字资源月点击率</td>
-  <td><asp:Label ID="digitial_search" runat="server"/></td>
+  <td>本校教材</td>
+  <td><asp:Label ID="digital1_search" runat="server"/></td>
+</tr>
+<tr>
+  <td>本校论文</td>
+  <td><asp:Label ID="digital2_search" runat="server"/></td>
+</tr>
+<tr>
+  <td>教学研究资料</td>
+  <td><asp:Label ID="digital3_search" runat="server"/></td>
+</tr>
+<tr>
+  <td>科研学术动态</td>
+  <td><asp:Label ID="digital4_search" runat="server"/></td>
+</tr>
+<tr>
+  <td>军械士官</td>
+  <td><asp:Label ID="digital5_search" runat="server"/></td>
+</tr>
+<tr>
+  <td>教学参考书全文库</td>
+  <td><asp:Label ID="digital6_search" runat="server"/></td>
+</tr>
+<tr>
+  <td>维修技术信息资料汇编</td>
+  <td><asp:Label ID="digital7_search" runat="server"/></td>
+</tr>
+<tr>
+  <td>学科学会论文集库</td>
+  <td><asp:Label ID="digital8_search" runat="server"/></td>
 </tr>
 </table>
 </form>
+
 </asp:Content>
 

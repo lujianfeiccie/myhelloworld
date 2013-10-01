@@ -58,4 +58,18 @@ public class Statistics
         }
         catch { return null; }
     }
+    public SqlDataReader GetDigitalInfoCount(string where,string pageid)
+    {
+        sql = string.Format("select count(id) as num from dbo.tb_statistic where page_id = '{0}'", pageid);
+        if (!where.Equals(""))
+        {
+            sql = sql + " and " + where;
+        }
+
+        try
+        {
+            return dataconnection.GetDataReader(sql);
+        }
+        catch { return null; }
+    }
 }
