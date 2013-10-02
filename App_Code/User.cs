@@ -10,6 +10,7 @@ using System.Web.UI.HtmlControls;
 using System.Data.SqlClient;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+using System.Text;
 /// <summary>
 /// User 用户类
 /// </summary>
@@ -911,5 +912,37 @@ public SqlDataReader GetMyHistory(DateTime datetime1,DateTime datetime2,int page
                 return "对不起，系统错误";
         }
         catch { return "对不起，系统错误"; }
+    }
+    /// <summary>
+    /// 获得视图数据列表
+    /// </summary>
+    public DataTable GetViewList(string strWhere)
+    {
+        StringBuilder strSql = new StringBuilder();
+        strSql.Append("select * ");
+        strSql.Append(" FROM lib_user ");
+        if (strWhere.Trim() != "")
+        {
+            strSql.Append(" where " + strWhere);
+        }
+        return dataconnection.GetDataTable(strSql.ToString());
+    }
+    /// <summary>
+    /// 分页获取数据列表
+    /// </summary>
+    public DataTable GetViewList(int StartIndex, int EndIndex, string strWhere)
+    {
+        StringBuilder strSql = new StringBuilder();
+        strSql.Append(" Select * ");
+        strSql.Append(" FROM (SELECT ROW_NUMBER() OVER(Order by userid DESC) AS rownum,* FROM [lib_user] ");
+        if (strWhere.Trim() != "")
+        {
+            strSql.Append(" Where " + strWhere);
+        }
+        strSql.Append(" ) AS D ");
+
+        strSql.Append(" where rownum between " + StartIndex + " and " + EndIndex + " ");
+
+        return dataconnection.GetDataTable(strSql.ToString());
     }
 }

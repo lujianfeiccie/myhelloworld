@@ -8,6 +8,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 using System.Data.SqlClient;
+using System.Text;
 
 /// <summary>
 /// LibWeb 的摘要说明
@@ -280,30 +281,18 @@ public class LibWeb
         return result;
     }
 
-    public SqlDataReader GetTypeList(string typename)
+    public DataTable GetTypeList(string typename)
     {
         //读取内容
         sql = "select * from [lib_pages] where _标识字符='" + typename + "'";
-        SqlDataReader reader = null;
+        DataTable mDataTable = null;
         //_所属类别
         string temptype = "";
         try
         {
-            reader = dataconnection.GetDataReader(sql);
-            if (reader.HasRows)
-            {
-                while (reader.Read())
-                {
-                    temptype = reader["_所属类别"].ToString();
-                }
-            }
-            else
-            {
-                /* result[0] = "暂无记录";
-                 result[1] = "暂无记录";
-                 result[3] = "";*/
-            }
-            reader.Close();
+            mDataTable = dataconnection.GetDataTable(sql);
+            
+                    temptype = mDataTable.Rows[0]["_所属类别"].ToString();                    
         }
         catch
         {
@@ -315,13 +304,31 @@ public class LibWeb
         sql = "select _页面名称,_标识字符,_详细介绍 from [lib_pages] where _所属类别='" + temptype + "'";
         try
         {
-            reader = dataconnection.GetDataReader(sql);
-            return reader;
+            mDataTable = dataconnection.GetDataTable(sql);
+            return mDataTable;
         }
         catch
         {
         }
-        return reader;
+        return mDataTable;
+    }
+    /// <summary>
+    /// 分页获取数据列表
+    /// </summary>
+    public DataTable GetViewList(int StartIndex, int EndIndex, string strWhere)
+    {
+        StringBuilder strSql = new StringBuilder();
+        strSql.Append(" Select * ");
+        strSql.Append(" FROM (SELECT ROW_NUMBER() OVER(Order by _标识字符 DESC) AS rownum,* FROM lib_pages ");
+        if (strWhere.Trim() != "")
+        {
+            strSql.Append(" Where " + strWhere);
+        }
+        strSql.Append(" ) AS D ");
+
+        strSql.Append(" where rownum between " + StartIndex + " and " + EndIndex + " ");
+
+        return dataconnection.GetDataTable(strSql.ToString());
     }
     public Model_LibWeb GetContent(string typename)
     {
